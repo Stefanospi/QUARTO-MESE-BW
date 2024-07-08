@@ -1,0 +1,60 @@
+﻿CREATE TABLE Categorie (
+    CategoriaID INT IDENTITY PRIMARY KEY,
+    NomeCategoria NVARCHAR(100) NOT NULL
+);
+
+
+CREATE TABLE Prodotti (
+    ProductID INT IDENTITY PRIMARY KEY,
+    Nome NVARCHAR(100) NOT NULL,
+    Descrizione NVARCHAR(500) NOT NULL,
+    Prezzo DECIMAL(18, 2) NOT NULL,
+    ImmagineUrl NVARCHAR(255),
+    Stock INT NOT NULL,
+    CategoriaID INT FOREIGN KEY REFERENCES Categorie(CategoriaID)
+);
+
+CREATE TABLE Anagrafica (
+    UserID INT IDENTITY PRIMARY KEY,
+    Nome NVARCHAR(100) NOT NULL,
+    Cognome NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(255) NOT NULL,
+    Via NVARCHAR(255) NOT NULL,
+    CAP NVARCHAR(10) NOT NULL,
+    Città NVARCHAR(100) NOT NULL,
+    Provincia NVARCHAR(100) NOT NULL,
+    Telefono NVARCHAR(15)
+);
+
+CREATE TABLE Ordini (
+    OrderID INT IDENTITY PRIMARY KEY,
+    UserID INT FOREIGN KEY REFERENCES Anagrafica(UserID),
+    DataOrdine DATETIME NOT NULL,
+    Stato NVARCHAR(50) NOT NULL,
+    Totale DECIMAL(18, 2) NOT NULL
+);
+
+CREATE TABLE ProdottiOrdine (
+    ProdottiOrdineID INT IDENTITY PRIMARY KEY,
+    OrderID INT FOREIGN KEY REFERENCES Ordini(OrderID),
+    ProductID INT FOREIGN KEY REFERENCES Prodotti(ProductID),
+    Quantità INT NOT NULL,
+    PrezzoUnitario DECIMAL(18, 2) NOT NULL
+);
+
+
+CREATE TABLE Carrello (
+    CartID INT IDENTITY PRIMARY KEY,
+    UserID INT FOREIGN KEY REFERENCES Anagrafica(UserID),
+    DataCreazione DATETIME NOT NULL
+);
+
+
+CREATE TABLE ProdottiCarrello (
+    ProdottiCarrelloID INT IDENTITY PRIMARY KEY,
+    CartID INT FOREIGN KEY REFERENCES Carrello(CartID),
+    ProductID INT FOREIGN KEY REFERENCES Prodotti(ProductID),
+    Quantità INT NOT NULL
+);
+
+
