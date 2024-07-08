@@ -13,6 +13,7 @@ namespace Quarto__Mese_BW.Services
 
         public ProdottoService(IConfiguration configuration)
         {
+            // Ottiene la stringa di connessione dal file di configurazione
             _connectionString = configuration.GetConnectionString("ECommerce");
         }
 
@@ -22,6 +23,7 @@ namespace Quarto__Mese_BW.Services
 
             using (var connection = new SqlConnection(_connectionString))
             {
+                // Query per ottenere tutti i prodotti con le relative categorie
                 var query = "SELECT p.ProductID, p.Nome, p.Descrizione, p.Prezzo, p.ImmagineUrl, p.Stock, p.CategoriaID, c.NomeCategoria FROM Prodotti p JOIN Categorie c ON p.CategoriaID = c.CategoriaID";
                 var command = new SqlCommand(query, connection);
 
@@ -30,6 +32,7 @@ namespace Quarto__Mese_BW.Services
                 {
                     while (reader.Read())
                     {
+                        // Creazione di un oggetto Prodotto e popolamento dei suoi attributi
                         var prodotto = new Prodotto
                         {
                             ProductID = reader.GetInt32(0),
@@ -52,11 +55,13 @@ namespace Quarto__Mese_BW.Services
 
             return prodotti;
         }
+
         public Prodotto GetProdottoById(int id)
         {
             var prodotto = new Prodotto();
             using (var connection = new SqlConnection(_connectionString))
             {
+                // Query per ottenere un prodotto specifico tramite l'ID
                 var query = "SELECT p.ProductID, p.Nome, p.Descrizione, p.Prezzo, p.ImmagineUrl, p.Stock, p.CategoriaID, c.NomeCategoria FROM Prodotti p JOIN Categorie c ON p.CategoriaID = c.CategoriaID WHERE p.ProductID = @ProductID";
                 var command = new SqlCommand(query, connection);
                 command.Parameters.Add("@ProductID", SqlDbType.Int).Value = id;
@@ -66,6 +71,7 @@ namespace Quarto__Mese_BW.Services
                 {
                     if (reader.Read())
                     {
+                        // Creazione di un oggetto Prodotto e popolamento dei suoi attributi
                         var prodottoId = new Prodotto
                         {
                             ProductID = reader.GetInt32(0),
@@ -81,12 +87,12 @@ namespace Quarto__Mese_BW.Services
                                 NomeCategoria = reader.GetString(7)
                             }
                         };
-                      prodotto = prodottoId;
+                        prodotto = prodottoId;
                     }
                 }
             }
             return prodotto;
         }
-        
+
     }
 }
