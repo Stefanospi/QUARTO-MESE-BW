@@ -14,15 +14,9 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Quarto _Mese_BW")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3af8ead0f9541452b88501be95e251640ad87682")]
-[assembly: System.Reflection.AssemblyProductAttribute("QUARTO-MESE-BW")]
-[assembly: System.Reflection.AssemblyTitleAttribute("QUARTO-MESE-BW")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c16e5e557fcc81228bdce0fa34cb1b18de8bfd7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b2b601ca77ed1dd249f8c35f7c42d3d642d2449")]
 [assembly: System.Reflection.AssemblyProductAttribute("Quarto _Mese_BW")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Quarto _Mese_BW")]
->>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generato dalla classe WriteCodeFragment di MSBuild.
