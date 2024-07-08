@@ -1,22 +1,26 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Quarto__Mese_BW.Models;
+using Quarto__Mese_BW.Services;
 
 namespace Quarto__Mese_BW.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IProdottoService _prodottoService;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(IProdottoService prodottoService)
     {
-        _logger = logger;
+        _prodottoService = prodottoService;
     }
 
     public IActionResult Index()
     {
-        return View();
+        var prodotti = _prodottoService.GetAllProdotti();
+        return View(prodotti);
     }
+
 
     public IActionResult Privacy()
     {

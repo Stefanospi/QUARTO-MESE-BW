@@ -1,9 +1,24 @@
-﻿@{
+﻿@model IEnumerable<Quarto__Mese_BW.Models.Prodotto>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <div class="row">
+        @foreach (var prodotto in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="@Url.Content(prodotto.ImmagineUrl)" class="card-img-top" alt="@prodotto.Nome">
+                    <div class="card-body">
+                        <h5 class="card-title">@prodotto.Nome</h5>
+                        <p class="card-text">@prodotto.Prezzo.ToString("C")</p>
+                        <a href="#" class="btn btn-primary">Aggiungi al carrello</a>
+                        <a href="#" class="btn btn-secondary">Dettaglio</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>
-
