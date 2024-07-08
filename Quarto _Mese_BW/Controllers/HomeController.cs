@@ -21,10 +21,10 @@ public class HomeController : Controller
         return View(prodotti);
     }
 
-
-    public IActionResult Privacy()
+    public IActionResult Dettagli(int id)
     {
-        return View();
+        var prodotto = _prodottoService.GetProdottoById(id);
+        return View(prodotto);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

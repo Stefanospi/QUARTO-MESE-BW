@@ -14,8 +14,13 @@
                     <div class="card-body">
                         <h5 class="card-title">@prodotto.Nome</h5>
                         <p class="card-text">@prodotto.Prezzo.ToString("C")</p>
+                        <div class="d-flex gap-4">
                         <a href="#" class="btn btn-primary">Aggiungi al carrello</a>
-                        <a href="#" class="btn btn-secondary">Dettaglio</a>
+                        <form asp-controller="Home" asp-action="Dettagli">
+                            <input type="hidden" name="id" value="@prodotto.ProductID" />
+                            <button class="btn btn-warning" type="submit">Dettagli</button>
+                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
