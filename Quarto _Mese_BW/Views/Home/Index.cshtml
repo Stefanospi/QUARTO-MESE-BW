@@ -5,22 +5,35 @@
 }
 
 <div class="container">
+
+    <div class="row py-3">
+        <div class="col text-center">
+            <h1>ECommerce</h1>
+            <hr />
+        </div>
+    </div>
+
     <div class="row">
+        <div>
+            <h3>
+                I nostri prodotti:
+            </h3>
+        </div>
         @foreach (var prodotto in Model)
         {
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
+            <div class="col-md-3">
+                <div class="card mb-4 h-100">
                     <img src="@Url.Content(prodotto.ImmagineUrl)" class="card-img-top" alt="@prodotto.Nome">
                     <div class="card-body">
                         <h5 class="card-title">@prodotto.Nome</h5>
-                        <p class="card-text">@prodotto.Prezzo.ToString("C")</p>
-                        <div class="d-flex gap-4">
-                        <a href="#" class="btn btn-primary">Aggiungi al carrello</a>
+                        <hr />
+                        <p class="card-text">Prezzo: @prodotto.Prezzo.ToString("C")</p>
+                        <a href="#" class="btn">Aggiungi al carrello</a>
                         <form asp-controller="Home" asp-action="Dettagli">
                             <input type="hidden" name="id" value="@prodotto.ProductID" />
-                            <button class="btn btn-warning" type="submit">Dettagli</button>
+                            <button class="btn" type="submit">Dettagli</button>
                         </form>
-                        </div>
+                    
                     </div>
                 </div>
             </div>
