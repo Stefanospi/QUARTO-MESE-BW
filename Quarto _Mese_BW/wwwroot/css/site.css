@@ -1,22 +1,76 @@
-﻿html {
-  font-size: 14px;
+﻿@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+html {
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background: #0E1217;
+    color: white
+}
+
+.navbar {
+    background: #1C1F26;
+}
+
+    .navbar a {
+        color: white;
+        border-bottom: 1px solid #212529;
+        margin: 0px 8px;
+        transition: all .2s ease;
+    }
+
+        .navbar a:hover {
+            color: white;
+            border-bottom: 1px solid white
+        }
+
+.card {
+    background-color: #1c1f2694;
+    border-radius: 30px;
+    border: 2px solid grey;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 3px #0b0b0b
+}
+
+.card-title {
+    background: #33374194;
+    padding: 0.5em;
+    border-radius: 8px;
+}
+
+.card a.btn {
+    color: white;
+    border: 1px solid darkgrey;
+    padding: 9px;
+    margin: 5px 0px;
+    background: #0E1217;
+    transition: all .2s ease;
+}
+
+    .card a.btn:hover {
+        background-color: #33374194;
+        border: 1px solid #0E1217;
+    }
+
+footer {
+    border-top: 1px solid #212529;
 }
