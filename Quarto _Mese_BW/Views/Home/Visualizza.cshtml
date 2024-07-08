@@ -1,7 +1,9 @@
 ﻿@model IEnumerable<(Quarto__Mese_BW.Models.Prodotto Prodotto, int Quantità)>
+@using System.Globalization;
 
 @{
     ViewData["Title"] = "Carrello";
+    decimal totaleCarrello = Model.Sum(item => item.Prodotto.Prezzo * item.Quantità);
 }
 
 <h2>Il tuo carrello (@ViewBag.NumeroProdotti prodotti)</h2>
@@ -40,6 +42,8 @@
         }
     </tbody>
 </table>
+
+<h3>Totale Carrello: @totaleCarrello.ToString("C")</h3>
 
 <form asp-controller="Home" asp-action="SvuotaCarrello" method="post">
     <button type="submit" class="btn btn-warning">Svuota Carrello</button>
