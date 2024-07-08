@@ -1,9 +1,42 @@
-﻿@{
+﻿@model IEnumerable<Quarto__Mese_BW.Models.Prodotto>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="@Url.Action("Index", "Home")">E-Commerce</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Visualizza", "Home")">
+                    <span class="fa fa-shopping-cart"></span>
+                    Carrello (@ViewBag.NumeroProdotti)
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
+<div class="container">
+    <div class="row">
+        @foreach (var prodotto in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="@Url.Content(prodotto.ImmagineUrl)" class="card-img-top" alt="@prodotto.Nome">
+                    <div class="card-body">
+                        <h5 class="card-title">@prodotto.Nome</h5>
+                        <p class="card-text">@prodotto.Prezzo.ToString("C")</p>
+                        <form asp-controller="Home" asp-action="Aggiungi" method="post">
+                            <input type="hidden" name="productId" value="@prodotto.ProductID" />
+                            <input type="number" name="quantità" value="1" min="1" class="form-control mb-2" />
+                            <button type="submit" class="btn btn-primary">Aggiungi al carrello</button>
+                        </form>
+                        <a asp-controller="Home" asp-action="Dettaglio" asp-route-id="@prodotto.ProductID" class="btn btn-secondary">Dettaglio</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

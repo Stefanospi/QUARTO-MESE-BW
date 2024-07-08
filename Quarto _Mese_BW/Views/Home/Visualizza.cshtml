@@ -1,0 +1,52 @@
+﻿@model IEnumerable<(Quarto__Mese_BW.Models.Prodotto Prodotto, int Quantità)>
+
+@{
+    ViewData["Title"] = "Carrello";
+}
+
+<h2>Il tuo carrello (@ViewBag.NumeroProdotti prodotti)</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Prezzo</th>
+            <th>Quantità</th>
+            <th>Totale</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Prodotto.Nome</td>
+                <td>@item.Prodotto.Prezzo.ToString("C")</td>
+                <td>
+                    <form asp-controller="Home" asp-action="AggiornaQuantità" method="post" class="d-inline">
+                        <input type="hidden" name="productId" value="@item.Prodotto.ProductID" />
+                        <input type="number" name="quantità" value="@item.Quantità" min="1" class="form-control d-inline" style="width: 70px;" />
+                        <button type="submit" class="btn btn-secondary">Aggiorna</button>
+                    </form>
+                </td>
+                <td>@(item.Prodotto.Prezzo * item.Quantità).ToString("C")</td>
+                <td>
+                    <form asp-controller="Home" asp-action="Rimuovi" method="post" class="d-inline">
+                        <input type="hidden" name="productId" value="@item.Prodotto.ProductID" />
+                        <button type="submit" class="btn btn-danger">Rimuovi</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<form asp-controller="Home" asp-action="SvuotaCarrello" method="post">
+    <button type="submit" class="btn btn-warning">Svuota Carrello</button>
+</form>
+
+<form asp-controller="Home" asp-action="Acquista" method="post">
+    <button type="submit" class="btn btn-primary">Acquista</button>
+</form>
+
+<a href="@Url.Action("Index", "Home")" class="btn btn-secondary mt-3">Torna alla Home</a>

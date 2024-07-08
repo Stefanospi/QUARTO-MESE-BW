@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/adapter88/Projects/Quarto _Mese_BW/Quarto _Mese_BW/Quarto _Mese_BW.csproj": {}
+    "/Users/adapter88/Desktop/Quarto _Mese_BW/Quarto _Mese_BW.csproj": {}
   },
   "projects": {
-    "/Users/adapter88/Projects/Quarto _Mese_BW/Quarto _Mese_BW/Quarto _Mese_BW.csproj": {
+    "/Users/adapter88/Desktop/Quarto _Mese_BW/Quarto _Mese_BW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/adapter88/Projects/Quarto _Mese_BW/Quarto _Mese_BW/Quarto _Mese_BW.csproj",
+        "projectUniqueName": "/Users/adapter88/Desktop/Quarto _Mese_BW/Quarto _Mese_BW.csproj",
         "projectName": "Quarto _Mese_BW",
-        "projectPath": "/Users/adapter88/Projects/Quarto _Mese_BW/Quarto _Mese_BW/Quarto _Mese_BW.csproj",
+        "projectPath": "/Users/adapter88/Desktop/Quarto _Mese_BW/Quarto _Mese_BW.csproj",
         "packagesPath": "/Users/adapter88/.nuget/packages/",
-        "outputPath": "/Users/adapter88/Projects/Quarto _Mese_BW/Quarto _Mese_BW/obj/",
+        "outputPath": "/Users/adapter88/Desktop/Quarto _Mese_BW/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/adapter88/.nuget/NuGet/NuGet.Config"
@@ -39,6 +39,20 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
