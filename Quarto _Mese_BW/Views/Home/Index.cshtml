@@ -34,6 +34,36 @@
                             <button type="submit" class="btn btn-primary">Aggiungi al carrello</button>
                         </form>
                         <a asp-controller="Home" asp-action="Dettaglio" asp-route-id="@prodotto.ProductID" class="btn btn-secondary">Dettaglio</a>
+<div class="container">
+
+    <div class="row py-3">
+        <div class="col text-center">
+            <h1>ECommerce</h1>
+            <hr />}
+        </div>
+    </div>
+
+    <div class="row">
+        <div>
+            <h3>
+                I nostri prodotti:
+            </h3>
+        </div>
+        @foreach (var prodotto in Model)
+        {
+            <div class="col-md-3">
+                <div class="card mb-4 h-100">
+                    <img src="@Url.Content(prodotto.ImmagineUrl)" class="card-img-top" alt="@prodotto.Nome">
+                    <div class="card-body">
+                        <h5 class="card-title">@prodotto.Nome</h5>
+                        <hr />
+                        <p class="card-text">Prezzo: @prodotto.Prezzo.ToString("C")</p>
+                        <a href="#" class="btn">Aggiungi al carrello</a>
+                        <form asp-controller="Home" asp-action="Dettagli">
+                            <input type="hidden" name="id" value="@prodotto.ProductID" />
+                            <button class="btn" type="submit">Dettagli</button>
+                        </form>
+                    
                     </div>
                 </div>
             </div>

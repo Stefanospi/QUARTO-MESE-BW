@@ -6,5 +6,6 @@ namespace Quarto__Mese_BW.Services
     public interface IProdottoService
     {
         IEnumerable<Prodotto> GetAllProdotti();
+        Prodotto GetProdottoById(int id);
     }
 }
