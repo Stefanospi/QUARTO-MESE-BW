@@ -34,12 +34,8 @@ namespace Quarto__Mese_BW.Controllers
         [HttpPost]
         public IActionResult Aggiungi(int productId, int quantità = 1)
         {
-            var prodotto = _prodottoService.GetAllProdotti().FirstOrDefault(p => p.ProductID == productId);
-            if (prodotto != null)
-            {
-                _carrelloService.AggiungiAlCarrello(prodotto, quantità);
-            }
-            ViewBag.NumeroProdotti = _carrelloService.GetNumeroProdotti(); // Aggiorna il numero di prodotti
+            _carrelloService.AggiungiAlCarrello(productId, quantità);
+            ViewBag.NumeroProdotti = _carrelloService.GetNumeroProdotti();
             return RedirectToAction("Index");
         }
 
@@ -47,7 +43,7 @@ namespace Quarto__Mese_BW.Controllers
         public IActionResult Rimuovi(int productId)
         {
             _carrelloService.RimuoviDalCarrello(productId);
-            ViewBag.NumeroProdotti = _carrelloService.GetNumeroProdotti(); // Aggiorna il numero di prodotti
+            ViewBag.NumeroProdotti = _carrelloService.GetNumeroProdotti();
             return RedirectToAction("Visualizza");
         }
 
@@ -55,7 +51,7 @@ namespace Quarto__Mese_BW.Controllers
         public IActionResult AggiornaQuantità(int productId, int quantità)
         {
             _carrelloService.AggiornaQuantità(productId, quantità);
-            ViewBag.NumeroProdotti = _carrelloService.GetNumeroProdotti(); // Aggiorna il numero di prodotti
+            ViewBag.NumeroProdotti = _carrelloService.GetNumeroProdotti();
             return RedirectToAction("Visualizza");
         }
 
@@ -63,16 +59,18 @@ namespace Quarto__Mese_BW.Controllers
         public IActionResult SvuotaCarrello()
         {
             _carrelloService.SvuotaCarrello();
-            ViewBag.NumeroProdotti = _carrelloService.GetNumeroProdotti(); // Aggiorna il numero di prodotti
+            ViewBag.NumeroProdotti = _carrelloService.GetNumeroProdotti();
             return RedirectToAction("Visualizza");
         }
 
         public IActionResult Visualizza()
         {
-            var prodotti = _carrelloService.GetCarrelloProdotti();
-            ViewBag.NumeroProdotti = _carrelloService.GetNumeroProdotti(); // Aggiorna il numero di prodotti
+            var carrelloItems = _carrelloService.GetCarrelloProdotti();
+            var prodotti = carrelloItems.Select(item => (item.Prodotto, item.Quantità));
+            ViewBag.NumeroProdotti = _carrelloService.GetNumeroProdotti();
             return View(prodotti);
         }
+
 
         public IActionResult Acquista()
         {

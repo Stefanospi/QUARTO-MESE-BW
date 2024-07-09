@@ -1,13 +1,16 @@
 ﻿using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.DependencyInjection;
 using System.Globalization;
 using Quarto__Mese_BW.Services;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-// Add session services
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
@@ -18,7 +21,7 @@ builder.Services.AddSession(options =>
 // Register services
 builder.Services.AddTransient<IProdottoService, ProdottoService>();
 builder.Services.AddTransient<IAuthService, AuthService>();
-builder.Services.AddSingleton<CarrelloService>(); // Registrazione di CarrelloService
+builder.Services.AddSingleton<CarrelloService>();
 
 var app = builder.Build();
 
@@ -41,9 +44,7 @@ app.UseRequestLocalization(localizationOptions);
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
 app.UseSession();
 

@@ -3,6 +3,7 @@
 
 @{
     ViewData["Title"] = "Carrello";
+    var cultura = new CultureInfo("it-IT");
     decimal totaleCarrello = Model.Sum(item => item.Prodotto.Prezzo * item.Quantità);
 }
 
@@ -23,7 +24,7 @@
         {
             <tr>
                 <td>@item.Prodotto.Nome</td>
-                <td>@item.Prodotto.Prezzo.ToString("C")</td>
+                <td>@item.Prodotto.Prezzo.ToString("C", cultura)</td>
                 <td>
                     <form asp-controller="Home" asp-action="AggiornaQuantità" method="post" class="d-inline">
                         <input type="hidden" name="productId" value="@item.Prodotto.ProductID" />
@@ -31,7 +32,7 @@
                         <button type="submit" class="btn btn-secondary">Aggiorna</button>
                     </form>
                 </td>
-                <td>@(item.Prodotto.Prezzo * item.Quantità).ToString("C")</td>
+                <td>@(item.Prodotto.Prezzo * item.Quantità).ToString("C", cultura)</td>
                 <td>
                     <form asp-controller="Home" asp-action="Rimuovi" method="post" class="d-inline">
                         <input type="hidden" name="productId" value="@item.Prodotto.ProductID" />
@@ -43,7 +44,7 @@
     </tbody>
 </table>
 
-<h3>Totale Carrello: @totaleCarrello.ToString("C")</h3>
+<h3>Totale Carrello: @totaleCarrello.ToString("C", cultura)</h3>
 
 <form asp-controller="Home" asp-action="SvuotaCarrello" method="post">
     <button type="submit" class="btn btn-warning">Svuota Carrello</button>
