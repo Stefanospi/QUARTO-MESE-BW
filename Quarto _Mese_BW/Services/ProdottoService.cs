@@ -92,15 +92,15 @@ namespace Quarto__Mese_BW.Services
             cmd.Parameters.Add(new SqlParameter("@id", id));
             cmd.ExecuteNonQuery();
         }
-        public string GetCategoriaNomeById(int id)
-        {
-            using var conn = GetConnection();
-            conn.Open();
-            using var cmd = GetCommand("SELECT Nome FROM Categorie WHERE CategoriaID = @id");
-            cmd.Parameters.Add(new SqlParameter("@id", id));
-            var nomeCategoria = cmd.ExecuteScalar();
-            return nomeCategoria?.ToString();
-        }
+        //public string GetCategoriaNomeById(int id)
+        //{
+        //    using var conn = GetConnection();
+        //    conn.Open();
+        //    using var cmd = GetCommand("SELECT NomeCategoria FROM Categorie WHERE CategoriaID = @id");
+        //    cmd.Parameters.Add(new SqlParameter("@id", id));
+        //    var nomeCategoria = cmd.ExecuteScalar();
+        //    return nomeCategoria?.ToString();
+        //}
 
     }
 }

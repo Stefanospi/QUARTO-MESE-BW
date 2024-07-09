@@ -7,7 +7,7 @@ namespace Quarto__Mese_BW.Services
     {
         IEnumerable<Prodotto> GetAllProdotti();
         Prodotto GetProdottoById(int id);
-        string GetCategoriaNomeById(int id); // New method to get category name by id
+        //string GetCategoriaNomeById(int id);
         void AddProdotto(Prodotto prodotto);
         void UpdateProdotto(Prodotto prodotto);
         void DeleteProdotto(int id);
