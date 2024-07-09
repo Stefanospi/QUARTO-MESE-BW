@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\Quarto _Mese_BW.csproj": {}
+    "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\Quarto _Mese_BW.csproj": {}
   },
   "projects": {
-    "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\Quarto _Mese_BW.csproj": {
+    "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\Quarto _Mese_BW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\Quarto _Mese_BW.csproj",
+        "projectUniqueName": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\Quarto _Mese_BW.csproj",
         "projectName": "Quarto _Mese_BW",
-        "projectPath": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\Quarto _Mese_BW.csproj",
-        "packagesPath": "C:\\Users\\spita\\.nuget\\packages\\",
-        "outputPath": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\obj\\",
+        "projectPath": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\Quarto _Mese_BW.csproj",
+        "packagesPath": "C:\\Users\\cinqu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\spita\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cinqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,6 +53,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.12, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
             }
           },
           "imports": [
@@ -74,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

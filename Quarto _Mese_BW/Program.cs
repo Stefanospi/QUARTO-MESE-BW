@@ -1,22 +1,20 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Quarto__Mese_BW.Services;
+﻿using Quarto__Mese_BW.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Add session services
+builder.Services.AddTransient<IProdottoService, ProdottoService>();
+builder.Services.AddTransient<IAuthService, AuthService>();
+builder.Services.AddTransient<ICategoriaService, CategoriaService>();
+
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
-
-// Register services
-builder.Services.AddTransient<IProdottoService, ProdottoService>();
-builder.Services.AddTransient<IAuthService, AuthService>();
 
 var app = builder.Build();
 
@@ -31,9 +29,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
-app.UseAuthorization();
 app.UseSession();
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
