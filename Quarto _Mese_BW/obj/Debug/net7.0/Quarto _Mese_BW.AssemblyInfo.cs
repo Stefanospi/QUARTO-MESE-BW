@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Quarto _Mese_BW")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d33bf7b8273cc7fcb2be8b3696604c25e68b9e88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7cf29c403e06ca0fd2117742885e7accda2b83e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Quarto _Mese_BW")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Quarto _Mese_BW")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
