@@ -1,4 +1,6 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@400;500;600;700&display=swap');
+﻿/*impostazioni generali*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@400;500;600;700&display=swap');
 
 
 html {
@@ -21,27 +23,30 @@ html {
 }
 
 body {
-    margin-bottom: 60px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     background: #0E1217;
     color: white
 }
 
+/*navbar*/
+
 .navbar {
     background: #1C1F26;
 }
 
-    .navbar a {
-        color: white;
-        border-bottom: 1px solid #212529;
-        margin: 0px 8px;
-        transition: all .2s ease;
-    }
+.navbar a {
+    color: white;
+    border-bottom: 1px solid #212529;
+    margin: 0px 8px;
+    transition: all .2s ease;
+}
 
-        .navbar a:hover {
-            color: white;
-            border-bottom: 1px solid white
-        }
+.navbar a:hover {
+    color: white;
+    border-bottom: 1px solid white
+}
+
+/*homepage*/
 
 .card {
     background-color: #1c1f2694;
@@ -51,13 +56,17 @@ body {
     box-shadow: 5px 5px 5px 3px #0b0b0b
 }
 
-.card-title {
+.card-img-top{
+    height: 15em;
+}
+
+.card-title, .details-description, .details-text {
     background: #33374194;
     padding: 0.5em;
     border-radius: 8px;
 }
 
-.card .btn {
+.card .btn, a.btn, .btn{
     color: white;
     border: 1px solid darkgrey;
     padding: 9px;
@@ -66,11 +75,31 @@ body {
     transition: all .2s ease;
 }
 
-    .card .btn:hover {
-        background-color: #33374194;
-        border: 1px solid #0E1217;
-    }
+.card .btn:hover, a.btn:hover, .btn:hover {
+    background-color: #33374194;
+    border: 1px solid #0E1217;
+    color: white;
+}
 
+/* dettagli */
+
+.img-container{
+    width:20em;
+}
+
+.description-div, .login-form {
+    border: 3px dashed #7a7e8794;
+    padding: 2em;
+}
+
+/*form*/
+
+.form-group .form-control {
+    background-color: #0E1217;
+    color: white;
+}
+
+/*footer*/
 footer {
     border-top: 1px solid #212529;
 }

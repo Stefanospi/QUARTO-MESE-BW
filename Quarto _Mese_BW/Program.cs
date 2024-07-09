@@ -10,7 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddTransient<IProdottoService, ProdottoService>();
+builder.Services.AddTransient<IAuthService, AuthService>();
+builder.Services.AddTransient<ICategoriaService, CategoriaService>();
+builder.Services.AddSingleton<CarrelloService>();
+
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
@@ -18,11 +23,6 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
     options.IdleTimeout = TimeSpan.FromDays(30); // Imposta la sessione per durare 30 giorni
 });
-
-// Register services
-builder.Services.AddTransient<IProdottoService, ProdottoService>();
-builder.Services.AddTransient<IAuthService, AuthService>();
-builder.Services.AddSingleton<CarrelloService>();
 
 var app = builder.Build();
 
@@ -46,8 +46,8 @@ app.UseRequestLocalization(localizationOptions);
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-app.UseAuthorization();
 app.UseSession();
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
