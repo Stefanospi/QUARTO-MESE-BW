@@ -4,34 +4,24 @@
     ViewData["Title"] = "Dettagli";
 }
 
-@* <div class="container">
-    <h1 class="text-center border-bottom display-4">Dettagli</h1>
-    <div class="row justify-content-center">
-        <div class="card" style="width: 18rem;">
-            <img src="@Model.ImmagineUrl" class="card-img-top" alt="Alternate Text" style="height: 200px;">
-            <div class="card-body">
-                <h5 class="card-title">@Html.DisplayFor(model => model.Nome)</h5>
-                <p class="card-text">@Html.DisplayFor(model => model.Descrizione)</p>
-                <p class="card-text">Prezzo: @Html.DisplayFor(model => model.Prezzo)</p>
-                <p class="card-text">Stock: @Html.DisplayFor(model => model.Stock)</p>
-                <p class="card-text">Categoria ID: @Html.DisplayFor(model => model.CategoriaID)</p>
-                <a href="@Url.Action("Index")" class="btn">Back to List</a>
+<div class="pt-4">
+    <h1>@Html.DisplayFor(model => model.Nome)</h1>
+    <hr />
+    <div class="d-flex justify-content-around">
+        <div class="img-container">
+            <img src="@Model.ImmagineUrl" class="w-100" alt="Alternate Text" >
+        </div>
+        <div class="d-flex flex-column gap-3 description-div">
+            <h5 class="details-description">@Html.DisplayFor(model => model.Descrizione)</h5>
+            <hr />
+            <div class="details-text fs-5 fw-normal">
+                <p>Prezzo: @Html.DisplayFor(model => model.Prezzo)</p>
+                <p>Pezzi disponibili: @Html.DisplayFor(model => model.Stock)</p>
+                <p>Categoria: @Html.DisplayFor(model => model.CategoriaID)</p>
             </div>
         </div>
     </div>
-</div> *@
-<div class="container">
-    <h1 class="text-center border-bottom">Dettagli</h1>
-    <div class="row">
-        <div class="col">
-            <img src="@Model.ImmagineUrl" class="img-fluid rounded-2" alt="Alternate Text">
-        </div>
-        <div class="col">
-            <h2 class="modal-title">@Model.Nome</h2>
-            <p class="fst-italic">@Model.Descrizione</p>
-            <p class="fw-bold">Prezzo: @Model.Prezzo</p>
-            <p class="fw-bold">Stock: @Model.Stock</p>
-            <p class="fw-bold">Categoria ID: @Model.CategoriaID</p>
-            <a href="@Url.Action("Index")" class="btn">Back to List</a>
+    <div class="text-center pt-5">
+        <a href="@Url.Action("Index")" class="btn btn-outline-danger">Back to List</a>
     </div>
 </div>

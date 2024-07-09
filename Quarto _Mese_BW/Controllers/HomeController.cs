@@ -24,6 +24,8 @@ public class HomeController : Controller
     public IActionResult Dettagli(int id)
     {
         var prodotto = _prodottoService.GetProdottoById(id);
+        //var categoria = _prodottoService.GetCategoriaNomeById(prodotto.CategoriaID);
+        //ViewData["Categoria"] = categoria;
         return View(prodotto);
     }
 

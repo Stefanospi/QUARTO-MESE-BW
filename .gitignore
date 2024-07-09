@@ -364,3 +364,7 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /FiscalCodeWebApi
+/obj/
+/bin/
+Quarto _Mese_BW/bin/Debug/net7.0/Quarto _Mese_BW.exe
+Quarto _Mese_BW/bin/Debug/net7.0/Quarto _Mese_BW.dll
