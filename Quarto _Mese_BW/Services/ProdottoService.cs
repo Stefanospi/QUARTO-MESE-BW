@@ -24,7 +24,7 @@ namespace Quarto__Mese_BW.Services
                     Nome = reader.GetString(1),
                     Descrizione = reader.GetString(2),
                     Prezzo = reader.GetDecimal(3),
-                    ImmagineUrl = reader.GetString(4),
+                    ImmagineUrl = reader.IsDBNull(4) ? null : reader.GetString(4),
                     Stock = reader.GetInt32(5),
                     CategoriaID = reader.GetInt32(6)
                 });
@@ -47,7 +47,7 @@ namespace Quarto__Mese_BW.Services
                     Nome = reader.GetString(1),
                     Descrizione = reader.GetString(2),
                     Prezzo = reader.GetDecimal(3),
-                    ImmagineUrl = reader.GetString(4),
+                    ImmagineUrl = reader.IsDBNull(4) ? null : reader.GetString(4),
                     Stock = reader.GetInt32(5),
                     CategoriaID = reader.GetInt32(6)
                 };
@@ -63,7 +63,7 @@ namespace Quarto__Mese_BW.Services
             cmd.Parameters.Add(new SqlParameter("@Nome", prodotto.Nome));
             cmd.Parameters.Add(new SqlParameter("@Descrizione", prodotto.Descrizione));
             cmd.Parameters.Add(new SqlParameter("@Prezzo", prodotto.Prezzo));
-            cmd.Parameters.Add(new SqlParameter("@ImmagineUrl", prodotto.ImmagineUrl));
+            cmd.Parameters.Add(new SqlParameter("@ImmagineUrl", string.IsNullOrEmpty(prodotto.ImmagineUrl) ? (object)DBNull.Value : prodotto.ImmagineUrl));
             cmd.Parameters.Add(new SqlParameter("@Stock", prodotto.Stock));
             cmd.Parameters.Add(new SqlParameter("@CategoriaID", prodotto.CategoriaID));
             cmd.ExecuteNonQuery();
@@ -77,7 +77,7 @@ namespace Quarto__Mese_BW.Services
             cmd.Parameters.Add(new SqlParameter("@Nome", prodotto.Nome));
             cmd.Parameters.Add(new SqlParameter("@Descrizione", prodotto.Descrizione));
             cmd.Parameters.Add(new SqlParameter("@Prezzo", prodotto.Prezzo));
-            cmd.Parameters.Add(new SqlParameter("@ImmagineUrl", prodotto.ImmagineUrl));
+            cmd.Parameters.Add(new SqlParameter("@ImmagineUrl", string.IsNullOrEmpty(prodotto.ImmagineUrl) ? (object)DBNull.Value : prodotto.ImmagineUrl));
             cmd.Parameters.Add(new SqlParameter("@Stock", prodotto.Stock));
             cmd.Parameters.Add(new SqlParameter("@CategoriaID", prodotto.CategoriaID));
             cmd.Parameters.Add(new SqlParameter("@ProductID", prodotto.ProductID));
