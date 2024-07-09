@@ -27,16 +27,13 @@ namespace Quarto__Mese_BW.Controllers
         return View(prodotto);
     }
 
-        public IActionResult Privacy()
+        public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Dettagli(int id)
-        {
-            var prodotto = _prodottoService.GetProdottoById(id);
+            var prodotto= _prodottoService.GetAllProdotti();
             return View(prodotto);
         }
+
+
 
         [HttpPost]
         public IActionResult Aggiungi(int productId, int quantità = 1)
