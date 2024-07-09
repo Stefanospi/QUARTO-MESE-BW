@@ -22,7 +22,7 @@ namespace Quarto__Mese_BW.Controllers
             _authService = authService;
             _prodottoService = prodottoService;
             _categoriaService = categoriaService;
-            _hostingEnvironment = hostingEnvironment; // Corretto il nome della variabile qui
+            _hostingEnvironment = hostingEnvironment;
         }
 
        
@@ -131,7 +131,7 @@ namespace Quarto__Mese_BW.Controllers
                     }
 
                     _prodottoService.UpdateProdotto(prodotto);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Admin");
                 }
                 catch (Exception ex)
                 {
@@ -197,7 +197,7 @@ namespace Quarto__Mese_BW.Controllers
                     }
 
                     _prodottoService.AddProdotto(prodotto);
-                    return RedirectToAction("Index", "Home"); // Modifica se necessario
+                    return RedirectToAction("Index", "Admin"); 
                 }
                 catch (Exception ex)
                 {

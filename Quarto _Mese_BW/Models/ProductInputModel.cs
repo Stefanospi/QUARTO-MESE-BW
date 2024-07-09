@@ -23,7 +23,7 @@ namespace Quarto__Mese_BW.Models
         public string ? ImmagineUrl { get; set; }
 
         [Display(Name = "Nuova Immagine")]
-        public IFormFile ImmagineFile { get; set; }
+        public IFormFile ? ImmagineFile { get; set; }
 
         [Required(ErrorMessage = "Il campo Quantità in magazzino è obbligatorio")]
         [Display(Name = "Quantità in magazzino")]
