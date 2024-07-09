@@ -4,20 +4,6 @@
     ViewData["Title"] = "Home Page";
 }
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="@Url.Action("Index", "Home")">E-Commerce</a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="@Url.Action("Visualizza", "Home")">
-                    <span class="fa fa-shopping-cart"></span>
-                    Carrello (@ViewBag.NumeroProdotti)
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
 <div class="container">
     <div class="row py-3">
         <div class="col text-center">
@@ -29,7 +15,7 @@
     <div class="row">
         @foreach (var prodotto in Model)
         {
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card mb-4 shadow-sm">
                     <img src="@Url.Content(prodotto.ImmagineUrl)" class="card-img-top" alt="@prodotto.Nome">
                     <div class="card-body">
