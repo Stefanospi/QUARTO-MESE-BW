@@ -81,6 +81,18 @@ body {
     color: white;
 }
 
+<<<<<<< HEAD
+
+    .detail-img:hover {
+        transform: scale(1.2);
+        transition: transform 0.2s;
+    }
+
+footer {
+    border-top: 1px solid #212529;
+}
+
+=======
 /* dettagli */
 
 .img-container{
@@ -103,3 +115,4 @@ body {
 footer {
     border-top: 1px solid #212529;
 }
+>>>>>>> main
