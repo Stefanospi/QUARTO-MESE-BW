@@ -4,22 +4,6 @@
     ViewData["Title"] = "Dettagli";
 }
 
-<<<<<<< HEAD
-<div class="container">
-    <h1 class="text-center border-bottom">Dettagli</h1>
-    <div class="row mt-4">
-        <div class="col-2">
-            <img src="@Model.ImmagineUrl" class="img-fluid rounded-2 h-100 detail-img" alt="Alternate Text">
-        </div>
-        <div class="col-10 border border-2 detail-personal">
-            <h2 class="modal-title">@Model.Nome</h2>
-            <p class="fst-italic">@Model.Descrizione</p>
-            <p class="fw-bold">Prezzo: @Model.Prezzo</p>
-            <p class="fw-bold">Stock: @Model.Stock</p>
-            <p class="fw-bold">Categoria:@Model.CategoriaID</p>
-            <a href="@Url.Action("Index")" class="btn btn-outline-light">Back to List</a>
-        </div>
-=======
 <div class="pt-4">
     <h1>@Html.DisplayFor(model => model.Nome)</h1>
     <hr />
@@ -39,6 +23,5 @@
     </div>
     <div class="text-center pt-5">
         <a href="@Url.Action("Index")" class="btn btn-outline-danger">Back to List</a>
->>>>>>> main
     </div>
 </div>
