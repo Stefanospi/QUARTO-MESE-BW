@@ -16,6 +16,7 @@ builder.Services.AddSession(options =>
 {
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
+    options.IdleTimeout = TimeSpan.FromDays(30); // Imposta la sessione per durare 30 giorni
 });
 
 // Register services

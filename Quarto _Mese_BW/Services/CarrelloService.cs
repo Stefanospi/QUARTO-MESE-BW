@@ -50,7 +50,7 @@ namespace Quarto__Mese_BW.Services
                 command.Parameters.AddWithValue("@UserID", userId == 0 ? DBNull.Value : (object)userId);
 
                 var cartIdObj = command.ExecuteScalar();
-                if (cartIdObj == null)
+                if (cartIdObj == DBNull.Value || cartIdObj == null)
                 {
                     query = "INSERT INTO Carrello (UserID, DataCreazione) OUTPUT INSERTED.CartID VALUES (@UserID, @DataCreazione)";
                     command = new SqlCommand(query, connection);
@@ -224,6 +224,5 @@ namespace Quarto__Mese_BW.Services
                 return result != DBNull.Value ? Convert.ToInt32(result) : 0;
             }
         }
-
     }
 }
