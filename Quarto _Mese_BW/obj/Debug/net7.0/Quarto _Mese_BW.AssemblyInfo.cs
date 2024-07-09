@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Quarto _Mese_BW")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e012059d0307ec179e8644a1de2a550b89197b07")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae7ef1614e4dd46c983682e911dd27e79346b225")]
->>>>>>> origin/sabryBis
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+987950eb0e0509e679031129aa46a037a377b6fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("Quarto _Mese_BW")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Quarto _Mese_BW")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
