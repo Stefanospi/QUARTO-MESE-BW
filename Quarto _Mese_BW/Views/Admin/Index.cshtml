@@ -1,8 +1,62 @@
-﻿@{
+﻿@model IEnumerable<Quarto__Mese_BW.Models.Prodotto>
+
+@{
     ViewData["Title"] = "Admin Area";
 }
 
-<h2>Admin Area</h2>
+<h2 class="text-white">Admin Area</h2>
 
-<p>Benvenuto nell'area amministrativa!</p>
+<p class="text-white">Benvenuto nell'area amministrativa!</p>
 <a href="@Url.Action("Logout", "Admin")" class="btn btn-danger">Logout</a>
+
+<table class="table table-bordered table-dark" id="productsTable">
+    <thead>
+        <tr>
+            <th class="text-white">Nome</th>
+            <th class="text-white">Descrizione</th>
+            <th class="text-white">Prezzo</th>
+            <th class="text-white">Immagine</th>
+            <th class="text-white">Stock</th>
+            <th class="text-white">Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prodotto in Model)
+        {
+            <tr data-id="@prodotto.ProductID">
+                <td class="text-white">@prodotto.Nome</td>
+                <td class="text-white">@prodotto.Descrizione</td>
+                <td class="text-white">@prodotto.Prezzo</td>
+                <td><img src="@prodotto.ImmagineUrl" alt="@prodotto.Nome" style="width: 50px;" /></td>
+                <td class="text-white">@prodotto.Stock</td>
+                <td>
+                    <a href="@Url.Action("Edit", new { id = prodotto.ProductID })" class="btn btn-primary text-white">Modifica</a>
+                    <button class="btn btn-danger delete-button text-white" data-id="@prodotto.ProductID">Cancella</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.delete-button').click(function () {
+            if (confirm('Sei sicuro di voler cancellare questo prodotto?')) {
+                var id = $(this).data('id');
+                $.ajax({
+                    url: '@Url.Action("Delete")',
+                    method: 'POST',
+                    data: { id: id },
+                    success: function (response) {
+                        if (response.success) {
+                            location.reload();
+                        } else {
+                            alert('Errore durante la cancellazione del prodotto');
+                        }
+                    }
+                });
+            }
+        });
+    });
+</script>

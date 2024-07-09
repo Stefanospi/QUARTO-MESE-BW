@@ -1,98 +1,96 @@
 ﻿using System.Collections.Generic;
-using System.Data;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.Data.SqlClient;
-using Microsoft.Extensions.Configuration;
+using System.Data.SqlClient;
 using Quarto__Mese_BW.Models;
+using System.Data.Common;
 
 namespace Quarto__Mese_BW.Services
 {
-    public class ProdottoService : IProdottoService
+    public class ProdottoService : SqlServerServiceBase, IProdottoService
     {
-        private readonly string _connectionString;
-
-        public ProdottoService(IConfiguration configuration)
-        {
-            // Ottiene la stringa di connessione dal file di configurazione
-            _connectionString = configuration.GetConnectionString("ECommerce");
-        }
+        public ProdottoService(IConfiguration config) : base(config) { }
 
         public IEnumerable<Prodotto> GetAllProdotti()
         {
             var prodotti = new List<Prodotto>();
-
-            using (var connection = new SqlConnection(_connectionString))
+            using var conn = GetConnection();
+            conn.Open();
+            using var cmd = GetCommand("SELECT ProductID, Nome, Descrizione, Prezzo, ImmagineUrl, Stock, CategoriaID FROM Prodotti");
+            using var reader = cmd.ExecuteReader();
+            while (reader.Read())
             {
-                // Query per ottenere tutti i prodotti con le relative categorie
-                var query = "SELECT p.ProductID, p.Nome, p.Descrizione, p.Prezzo, p.ImmagineUrl, p.Stock, p.CategoriaID, c.NomeCategoria FROM Prodotti p JOIN Categorie c ON p.CategoriaID = c.CategoriaID";
-                var command = new SqlCommand(query, connection);
-
-                connection.Open();
-                using (var reader = command.ExecuteReader())
+                prodotti.Add(new Prodotto
                 {
-                    while (reader.Read())
-                    {
-                        // Creazione di un oggetto Prodotto e popolamento dei suoi attributi
-                        var prodotto = new Prodotto
-                        {
-                            ProductID = reader.GetInt32(0),
-                            Nome = reader.GetString(1),
-                            Descrizione = reader.GetString(2),
-                            Prezzo = reader.GetDecimal(3),
-                            ImmagineUrl = reader.GetString(4),
-                            Stock = reader.GetInt32(5),
-                            CategoriaID = reader.GetInt32(6),
-                            Categoria = new Categoria
-                            {
-                                CategoriaID = reader.GetInt32(6),
-                                NomeCategoria = reader.GetString(7)
-                            }
-                        };
-                        prodotti.Add(prodotto);
-                    }
-                }
+                    ProductID = reader.GetInt32(0),
+                    Nome = reader.GetString(1),
+                    Descrizione = reader.GetString(2),
+                    Prezzo = reader.GetDecimal(3),
+                    ImmagineUrl = reader.GetString(4),
+                    Stock = reader.GetInt32(5),
+                    CategoriaID = reader.GetInt32(6)
+                });
             }
-
             return prodotti;
         }
 
         public Prodotto GetProdottoById(int id)
         {
-            var prodotto = new Prodotto();
-            using (var connection = new SqlConnection(_connectionString))
+            using var conn = GetConnection();
+            conn.Open();
+            using var cmd = GetCommand("SELECT ProductID, Nome, Descrizione, Prezzo, ImmagineUrl, Stock, CategoriaID FROM Prodotti WHERE ProductID = @id");
+            cmd.Parameters.Add(new SqlParameter("@id", id));
+            using var reader = cmd.ExecuteReader();
+            if (reader.Read())
             {
-                // Query per ottenere un prodotto specifico tramite l'ID
-                var query = "SELECT p.ProductID, p.Nome, p.Descrizione, p.Prezzo, p.ImmagineUrl, p.Stock, p.CategoriaID, c.NomeCategoria FROM Prodotti p JOIN Categorie c ON p.CategoriaID = c.CategoriaID WHERE p.ProductID = @ProductID";
-                var command = new SqlCommand(query, connection);
-                command.Parameters.Add("@ProductID", SqlDbType.Int).Value = id;
-
-                connection.Open();
-                using (var reader = command.ExecuteReader())
+                return new Prodotto
                 {
-                    if (reader.Read())
-                    {
-                        // Creazione di un oggetto Prodotto e popolamento dei suoi attributi
-                        var prodottoId = new Prodotto
-                        {
-                            ProductID = reader.GetInt32(0),
-                            Nome = reader.GetString(1),
-                            Descrizione = reader.GetString(2),
-                            Prezzo = reader.GetDecimal(3),
-                            ImmagineUrl = reader.GetString(4),
-                            Stock = reader.GetInt32(5),
-                            CategoriaID = reader.GetInt32(6),
-                            Categoria = new Categoria
-                            {
-                                CategoriaID = reader.GetInt32(6),
-                                NomeCategoria = reader.GetString(7)
-                            }
-                        };
-                        prodotto = prodottoId;
-                    }
-                }
+                    ProductID = reader.GetInt32(0),
+                    Nome = reader.GetString(1),
+                    Descrizione = reader.GetString(2),
+                    Prezzo = reader.GetDecimal(3),
+                    ImmagineUrl = reader.GetString(4),
+                    Stock = reader.GetInt32(5),
+                    CategoriaID = reader.GetInt32(6)
+                };
             }
-            return prodotto;
+            return null;
         }
 
+        public void AddProdotto(Prodotto prodotto)
+        {
+            using var conn = GetConnection();
+            conn.Open();
+            using var cmd = GetCommand("INSERT INTO Prodotti (Nome, Descrizione, Prezzo, ImmagineUrl, Stock, CategoriaID) VALUES (@Nome, @Descrizione, @Prezzo, @ImmagineUrl, @Stock, @CategoriaID)");
+            cmd.Parameters.Add(new SqlParameter("@Nome", prodotto.Nome));
+            cmd.Parameters.Add(new SqlParameter("@Descrizione", prodotto.Descrizione));
+            cmd.Parameters.Add(new SqlParameter("@Prezzo", prodotto.Prezzo));
+            cmd.Parameters.Add(new SqlParameter("@ImmagineUrl", prodotto.ImmagineUrl));
+            cmd.Parameters.Add(new SqlParameter("@Stock", prodotto.Stock));
+            cmd.Parameters.Add(new SqlParameter("@CategoriaID", prodotto.CategoriaID));
+            cmd.ExecuteNonQuery();
+        }
+
+        public void UpdateProdotto(Prodotto prodotto)
+        {
+            using var conn = GetConnection();
+            conn.Open();
+            using var cmd = GetCommand("UPDATE Prodotti SET Nome = @Nome, Descrizione = @Descrizione, Prezzo = @Prezzo, ImmagineUrl = @ImmagineUrl, Stock = @Stock, CategoriaID = @CategoriaID WHERE ProductID = @ProductID");
+            cmd.Parameters.Add(new SqlParameter("@Nome", prodotto.Nome));
+            cmd.Parameters.Add(new SqlParameter("@Descrizione", prodotto.Descrizione));
+            cmd.Parameters.Add(new SqlParameter("@Prezzo", prodotto.Prezzo));
+            cmd.Parameters.Add(new SqlParameter("@ImmagineUrl", prodotto.ImmagineUrl));
+            cmd.Parameters.Add(new SqlParameter("@Stock", prodotto.Stock));
+            cmd.Parameters.Add(new SqlParameter("@CategoriaID", prodotto.CategoriaID));
+            cmd.Parameters.Add(new SqlParameter("@ProductID", prodotto.ProductID));
+            cmd.ExecuteNonQuery();
+        }
+
+        public void DeleteProdotto(int id)
+        {
+            using var conn = GetConnection();
+            conn.Open();
+            using var cmd = GetCommand("DELETE FROM Prodotti WHERE ProductID = @id");
+            cmd.Parameters.Add(new SqlParameter("@id", id));
+            cmd.ExecuteNonQuery();
+        }
     }
 }
