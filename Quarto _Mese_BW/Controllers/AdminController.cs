@@ -4,6 +4,9 @@ using Quarto__Mese_BW.Services;
 using Microsoft.AspNetCore.Http;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
 namespace Quarto__Mese_BW.Controllers
 {
@@ -12,13 +15,17 @@ namespace Quarto__Mese_BW.Controllers
         private readonly IAuthService _authService;
         private readonly IProdottoService _prodottoService;
         private readonly ICategoriaService _categoriaService;
+        private readonly IWebHostEnvironment _hostingEnvironment;
 
-        public AdminController(IAuthService authService, IProdottoService prodottoService, ICategoriaService categoriaService)
+        public AdminController(IAuthService authService, IProdottoService prodottoService, ICategoriaService categoriaService, IWebHostEnvironment hostingEnvironment)
         {
             _authService = authService;
             _prodottoService = prodottoService;
             _categoriaService = categoriaService;
+            _hostingEnvironment = hostingEnvironment;
         }
+
+       
 
         public IActionResult Login()
         {
@@ -69,14 +76,25 @@ namespace Quarto__Mese_BW.Controllers
                 return NotFound();
             }
 
+            var model = new ProductInputModel
+            {
+                ProductID = prodotto.ProductID,
+                Nome = prodotto.Nome,
+                Descrizione = prodotto.Descrizione,
+                Prezzo = prodotto.Prezzo,
+                ImmagineUrl = prodotto.ImmagineUrl,
+                Stock = prodotto.Stock,
+                CategoriaID = prodotto.CategoriaID
+            };
+
             var categorie = _categoriaService.GetAllCategorie().ToList();
             ViewBag.Categorie = categorie;
 
-            return View(prodotto);
+            return View(model);
         }
 
         [HttpPost]
-        public IActionResult Edit(Prodotto prodotto)
+        public IActionResult Edit(ProductInputModel model)
         {
             if (HttpContext.Session.GetString("IsAdmin") != "true")
             {
@@ -85,14 +103,46 @@ namespace Quarto__Mese_BW.Controllers
 
             if (ModelState.IsValid)
             {
-                _prodottoService.UpdateProdotto(prodotto);
-                return RedirectToAction("Index");
+                var prodotto = new Prodotto
+                {
+                    ProductID = model.ProductID,
+                    Nome = model.Nome,
+                    Descrizione = model.Descrizione,
+                    Prezzo = model.Prezzo,
+                    ImmagineUrl = model.ImmagineUrl,
+                    Stock = model.Stock,
+                    CategoriaID = model.CategoriaID
+                };
+
+                try
+                {
+                    if (model.ImmagineFile != null && model.ImmagineFile.Length > 0)
+                    {
+                        string uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "img");
+                        string uniqueFileName = Guid.NewGuid().ToString() + "_" + model.ImmagineFile.FileName;
+                        string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            model.ImmagineFile.CopyTo(fileStream);
+                        }
+
+                        prodotto.ImmagineUrl = "/img/" + uniqueFileName;
+                    }
+
+                    _prodottoService.UpdateProdotto(prodotto);
+                    return RedirectToAction("Index", "Admin");
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", "Si è verificato un errore durante il salvataggio del prodotto: " + ex.Message);
+                }
             }
 
             var categorie = _categoriaService.GetAllCategorie().ToList();
             ViewBag.Categorie = categorie;
 
-            return View(prodotto);
+            return View(model);
         }
 
         [HttpPost]
@@ -110,11 +160,6 @@ namespace Quarto__Mese_BW.Controllers
 
         public IActionResult Create()
         {
-            if (HttpContext.Session.GetString("IsAdmin") != "true")
-            {
-                return RedirectToAction("Login");
-            }
-
             var categorie = _categoriaService.GetAllCategorie();
             ViewBag.Categorie = new SelectList(categorie, "CategoriaID", "NomeCategoria");
 
@@ -122,23 +167,49 @@ namespace Quarto__Mese_BW.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Prodotto prodotto)
+        public IActionResult Create(ProductInputModel model)
         {
-            if (HttpContext.Session.GetString("IsAdmin") != "true")
-            {
-                return RedirectToAction("Login");
-            }
-
             if (ModelState.IsValid)
             {
-                _prodottoService.AddProdotto(prodotto);
-                return RedirectToAction("Index");
+                var prodotto = new Prodotto
+                {
+                    Nome = model.Nome,
+                    Descrizione = model.Descrizione,
+                    Prezzo = model.Prezzo,
+                    Stock = model.Stock,
+                    CategoriaID = model.CategoriaID
+                };
+
+                try
+                {
+                    if (model.ImmagineFile != null && model.ImmagineFile.Length > 0)
+                    {
+                        string uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "img");
+                        string uniqueFileName = Guid.NewGuid().ToString() + "_" + model.ImmagineFile.FileName;
+                        string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            model.ImmagineFile.CopyTo(fileStream);
+                        }
+
+                        prodotto.ImmagineUrl = "/img/" + uniqueFileName;
+                    }
+
+                    _prodottoService.AddProdotto(prodotto);
+                    return RedirectToAction("Index", "Admin"); 
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", "Si è verificato un errore durante il salvataggio del prodotto: " + ex.Message);
+                }
             }
 
             var categorie = _categoriaService.GetAllCategorie();
             ViewBag.Categorie = new SelectList(categorie, "CategoriaID", "NomeCategoria");
 
-            return View(prodotto);
+            return View(model);
         }
+
     }
 }
