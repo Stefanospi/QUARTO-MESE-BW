@@ -31,6 +31,12 @@ namespace Quarto__Mese_BW.Controllers
             return View();
         }
 
+        public IActionResult Dettagli(int id)
+        {
+            var prodotto = _prodottoService.GetProdottoById(id);
+            return View(prodotto);
+        }
+
         [HttpPost]
         public IActionResult Aggiungi(int productId, int quantità = 1)
         {
