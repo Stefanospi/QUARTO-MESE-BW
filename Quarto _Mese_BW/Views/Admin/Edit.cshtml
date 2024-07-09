@@ -1,4 +1,4 @@
-﻿@model Quarto__Mese_BW.Models.Prodotto
+﻿@model Quarto__Mese_BW.Models.ProductInputModel
 
 @{
     ViewData["Title"] = "Modifica Prodotto";
@@ -7,7 +7,7 @@
 
 <h2 class="text-white">Modifica Prodotto</h2>
 
-<form asp-action="Edit" method="post">
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label asp-for="Nome" class="text-white"></label>
         <input asp-for="Nome" class="form-control bg-dark text-white" />
@@ -22,7 +22,11 @@
     </div>
     <div class="form-group">
         <label asp-for="ImmagineUrl" class="text-white"></label>
-        <input asp-for="ImmagineUrl" class="form-control bg-dark text-white" />
+        <input asp-for="ImmagineUrl" class="form-control bg-dark text-white" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="ImmagineFile" class="text-white"></label>
+        <input asp-for="ImmagineFile" type="file" class="form-control-file bg-dark text-white" />
     </div>
     <div class="form-group">
         <label asp-for="Stock" class="text-white"></label>
@@ -41,3 +45,6 @@
     <button type="submit" class="btn btn-primary text-white">Salva</button>
     <a asp-action="Index" class="btn btn-secondary text-white">Annulla</a>
 </form>
+
+
+
