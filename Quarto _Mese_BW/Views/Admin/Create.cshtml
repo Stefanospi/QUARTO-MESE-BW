@@ -24,9 +24,9 @@
                 <span asp-validation-for="Prezzo" class="text-danger"></span>
             </div>
             <div class="form-group p-3 details-description my-4">
-                <label asp-for="ImmagineUrl" class="fs-5 fw-light form-custom">URL Immagine</label>
-                <input asp-for="ImmagineUrl" class="form-control" />
-                <span asp-validation-for="ImmagineUrl" class="text-danger"></span>
+                <label asp-for="ImmagineFile" class="control-label">Immagine</label>
+                <input asp-for="ImmagineFile" type="file" class="form-control-file" />
+                <span asp-validation-for="ImmagineFile" class="text-danger"></span>
             </div>
             <div class="form-group p-3 details-description my-4">
                 <label asp-for="Stock" class="fs-5 fw-light form-custom">Quantità in magazzino</label>
@@ -44,13 +44,5 @@
             <button type="submit" class="btn btn-primary">Salva</button>
         </form>
     </div>
-            <div class="form-group">
-                <label asp-for="ImmagineFile" class="control-label">Immagine</label>
-                <input asp-for="ImmagineFile" type="file" class="form-control-file" />
-                <span asp-validation-for="ImmagineFile" class="text-danger"></span>
-            </div>
 
-            <button type="submit" class="btn btn-primary">Salva</button>
-
-    </div>
-</div>
+ </div>
