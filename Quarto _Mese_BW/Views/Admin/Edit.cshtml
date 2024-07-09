@@ -4,46 +4,6 @@
     ViewData["Title"] = "Modifica Prodotto";
     var categorie = ViewBag.Categorie as IEnumerable<Quarto__Mese_BW.Models.Categoria>;
 }
-<div class="pt-3">
-    <h2 class="text-white">Modifica Prodotto</h2>
-    <div class="description-div">
-        <form asp-action="Edit" method="post">
-            <div class="form-group p-3 details-description mb-4">
-                <label asp-for="Nome" class="fs-5 fw-light form-custom"></label>
-                <input asp-for="Nome" class="form-control" />
-            </div>
-            <div class="form-group p-3 details-description my-4">
-                <label asp-for="Descrizione" class="fs-5 fw-light form-custom"></label>
-                <textarea asp-for="Descrizione" class="form-control "></textarea>
-            </div>
-            <div class="form-group p-3 details-description my-4">
-                <label asp-for="Prezzo" class="fs-5 fw-light form-custom"></label>
-                <input asp-for="Prezzo" class="form-control " />
-            </div>
-            <div class="form-group p-3 details-description my-4">
-                <label asp-for="ImmagineUrl" class="fs-5 fw-light form-custom"></label>
-                <input asp-for="ImmagineUrl" class="form-control " />
-            </div>
-            <div class="form-group p-3 details-description my-4">
-                <label asp-for="Stock" class="fs-5 fw-light form-custom"></label>
-                <input asp-for="Stock" class="form-control " />
-            </div>
-            <div class="form-group p-3 details-description my-4">
-                <label asp-for="CategoriaID" class="fs-5 fw-light form-custom"></label>
-                <select asp-for="CategoriaID" class="form-control ">
-                    @foreach (var categoria in categorie)
-                    {
-                        <option value="@categoria.CategoriaID">@categoria.NomeCategoria</option>
-                    }
-                </select>
-            </div>
-            <input type="hidden" asp-for="ProductID" />
-            <button type="submit" class="btn btn-primary text-white">Salva</button>
-            <a asp-action="Index" class="btn btn-secondary text-white">Annulla</a>
-        </form>
-    </div>
-    
-</div>
 
 <<<<<<< HEAD
 =======
@@ -88,4 +48,4 @@
     <button type="submit" class="btn btn-primary text-white">Salva</button>
     <a asp-action="Index" class="btn btn-secondary text-white">Annulla</a>
 </form>
->>>>>>> origin/sabryBis
+>>>>>>>>> Temporary merge branch 2
