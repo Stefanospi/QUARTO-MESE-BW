@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Epicode\QUARTO MESE\QUARTO-MESE-BW\Quarto _Mese_BW
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Epicode/QUARTO MESE/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Admin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Epicode/QUARTO MESE/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

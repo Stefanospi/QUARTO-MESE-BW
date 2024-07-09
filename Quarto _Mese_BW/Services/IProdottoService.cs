@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using Quarto__Mese_BW.Models;
+﻿using Quarto__Mese_BW.Models;
+using System.Collections.Generic;
 
 namespace Quarto__Mese_BW.Services
 {
@@ -7,5 +7,8 @@ namespace Quarto__Mese_BW.Services
     {
         IEnumerable<Prodotto> GetAllProdotti();
         Prodotto GetProdottoById(int id);
+        void AddProdotto(Prodotto prodotto);
+        void UpdateProdotto(Prodotto prodotto);
+        void DeleteProdotto(int id);
     }
 }
