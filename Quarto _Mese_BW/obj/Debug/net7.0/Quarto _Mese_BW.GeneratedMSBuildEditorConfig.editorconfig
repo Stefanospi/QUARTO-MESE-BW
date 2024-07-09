@@ -9,55 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Quarto__Mese_BW
 build_property.RootNamespace = Quarto__Mese_BW
-build_property.ProjectDir = D:\Epicode\QUARTO MESE\QUARTO-MESE-BW\Quarto _Mese_BW\
+build_property.ProjectDir = C:\Users\franc\source\repos\QUARTO-MESE-BW\Quarto _Mese_BW\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Epicode\QUARTO MESE\QUARTO-MESE-BW\Quarto _Mese_BW
+build_property.MSBuildProjectDirectory = C:\Users\franc\source\repos\QUARTO-MESE-BW\Quarto _Mese_BW
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Epicode/QUARTO MESE/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Admin/Create.cshtml]
+[C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Admin/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Epicode/QUARTO MESE/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Admin/Edit.cshtml]
+[C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Admin/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Epicode/QUARTO MESE/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Admin/Index.cshtml]
+[C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Epicode/QUARTO MESE/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Admin/Login.cshtml]
+[C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Admin/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Epicode/QUARTO MESE/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Home/Dettagli.cshtml]
+[C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Home/Dettagli.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXR0YWdsaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Epicode/QUARTO MESE/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Home/Index.cshtml]
+[C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Epicode/QUARTO MESE/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Shared/Error.cshtml]
+[C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Epicode/QUARTO MESE/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Epicode/QUARTO MESE/QUARTO-MESE-BW/Quarto _Mese_BW/Views/_ViewImports.cshtml]
+[C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Epicode/QUARTO MESE/QUARTO-MESE-BW/Quarto _Mese_BW/Views/_ViewStart.cshtml]
+[C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Epicode/QUARTO MESE/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Shared/_Layout.cshtml]
+[C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7o8gnff1l1
