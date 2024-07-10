@@ -1,15 +1,15 @@
 ﻿@model IEnumerable<Quarto__Mese_BW.Models.Ordine>
 
 @{
-    ViewData["Title"] = "I tuoi ordini";
+    ViewData["Title"] = "Ordini";
 }
 
 <h2>I tuoi ordini</h2>
 
 @if (!Model.Any())
 {
-    <div class="alert alert-warning" role="alert">
-        Non hai ordini attivi. <a href="@Url.Action("Index", "Home")" class="alert-link">Visita il nostro catalogo prodotti</a> per effettuare un acquisto.
+    <div class="alert alert-info" role="alert">
+        Non ci sono ordini. Vai al <a href="@Url.Action("Index", "Home")" class="alert-link">catalogo dei prodotti</a> per effettuare un acquisto.
     </div>
 }
 else
@@ -17,11 +17,11 @@ else
     <table class="table">
         <thead>
             <tr>
-                <th>OrderID</th>
+                <th>ID Ordine</th>
                 <th>Data Ordine</th>
                 <th>Stato</th>
                 <th>Totale</th>
-                <th></th>
+                <th>Azioni</th>
             </tr>
         </thead>
         <tbody>
@@ -29,14 +29,14 @@ else
             {
                 <tr>
                     <td>@ordine.OrderID</td>
-                    <td>@ordine.DataOrdine.ToString("g")</td>
+                    <td>@ordine.DataOrdine.ToString("dd/MM/yyyy")</td>
                     <td>@ordine.Stato</td>
                     <td>@ordine.Totale.ToString("C")</td>
                     <td>
-                        <a href="@Url.Action("DettagliOrdine", "Home", new { id = ordine.OrderID })" class="btn btn-primary">Dettagli</a>
-                        <form asp-controller="Home" asp-action="EliminaOrdine" method="post" class="d-inline" onsubmit="return confirm('Sei sicuro di voler eliminare questo ordine?');">
+                        <a asp-action="DettagliOrdine" asp-route-id="@ordine.OrderID" class="btn btn-info">Dettagli</a>
+                        <form asp-action="EliminaOrdine" method="post" class="d-inline">
                             <input type="hidden" name="orderId" value="@ordine.OrderID" />
-                            <button type="submit" class="btn btn-danger">Elimina</button>
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Sei sicuro di voler eliminare questo ordine?');">Elimina</button>
                         </form>
                     </td>
                 </tr>
@@ -44,5 +44,3 @@ else
         </tbody>
     </table>
 }
-
-<a href="@Url.Action("Index", "Home")" class="btn btn-secondary mt-3">Torna alla Home</a>

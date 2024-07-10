@@ -218,56 +218,67 @@ namespace Quarto__Mese_BW.Services
             return user;
         }
 
-        public void CompletaAcquisto()
+        public decimal GetTotaleCarrello()
         {
             var cartId = GetOrCreateCarrelloId();
-            var user = GetFirstAnagrafica(); // Utilizza il primo utente disponibile
-
-            if (user == null)
-            {
-                throw new Exception("Nessun utente trovato nella tabella Anagrafica.");
-            }
-
             using (var connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
-                using (var transaction = connection.BeginTransaction())
+                var query = "SELECT SUM(p.Prezzo * pc.Quantità) FROM ProdottiCarrello pc JOIN Prodotti p ON pc.ProductID = p.ProductID WHERE pc.CartID = @CartID";
+                var command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@CartID", cartId);
+                var result = command.ExecuteScalar();
+                return result != DBNull.Value ? Convert.ToDecimal(result) : 0m;
+            }
+        }
+
+        public void CompletaAcquisto(Anagrafica anagrafica)
+        {
+            var cartId = GetOrCreateCarrelloId();
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                // Salva i dati dell'anagrafica e ottieni l'ID dell'utente
+                var query = @"
+            INSERT INTO Anagrafica (Nome, Cognome, Email, Via, CAP, Città, Provincia, Telefono)
+            VALUES (@Nome, @Cognome, @Email, @Via, @CAP, @Città, @Provincia, @Telefono);
+            SELECT CAST(scope_identity() AS int)";
+                var command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Nome", anagrafica.Nome);
+                command.Parameters.AddWithValue("@Cognome", anagrafica.Cognome);
+                command.Parameters.AddWithValue("@Email", anagrafica.Email);
+                command.Parameters.AddWithValue("@Via", anagrafica.Via);
+                command.Parameters.AddWithValue("@CAP", anagrafica.CAP);
+                command.Parameters.AddWithValue("@Città", anagrafica.Città);
+                command.Parameters.AddWithValue("@Provincia", anagrafica.Provincia);
+                command.Parameters.AddWithValue("@Telefono", anagrafica.Telefono);
+                var userId = (int)command.ExecuteScalar();
+
+                // Salva l'ordine e ottieni l'ID dell'ordine
+                query = "INSERT INTO Ordini (UserID, DataOrdine, Stato, Totale) OUTPUT INSERTED.OrderID VALUES (@UserID, @DataOrdine, @Stato, @Totale)";
+                command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserID", userId);
+                command.Parameters.AddWithValue("@DataOrdine", DateTime.Now);
+                command.Parameters.AddWithValue("@Stato", "In Elaborazione");
+                command.Parameters.AddWithValue("@Totale", GetTotaleCarrello());
+                var orderId = (int)command.ExecuteScalar();
+
+                // Salva i prodotti dell'ordine
+                var prodottiCarrello = GetCarrelloProdotti();
+                foreach (var item in prodottiCarrello)
                 {
-                    try
-                    {
-                        var query = "INSERT INTO Ordini (UserID, DataOrdine, Stato, Totale) OUTPUT INSERTED.OrderID VALUES (@UserID, @DataOrdine, @Stato, @Totale)";
-                        var command = new SqlCommand(query, connection, transaction);
-                        command.Parameters.AddWithValue("@UserID", user.UserID);
-                        command.Parameters.AddWithValue("@DataOrdine", DateTime.Now);
-                        command.Parameters.AddWithValue("@Stato", "In elaborazione");
-
-                        var totale = GetCarrelloProdotti().Sum(item => item.Quantità * item.Prodotto.Prezzo);
-                        command.Parameters.AddWithValue("@Totale", totale);
-
-                        var orderId = (int)command.ExecuteScalar();
-
-                        var carrelloItems = GetCarrelloProdotti();
-                        foreach (var item in carrelloItems)
-                        {
-                            query = "INSERT INTO ProdottiOrdine (OrderID, ProductID, Quantità, PrezzoUnitario) VALUES (@OrderID, @ProductID, @Quantità, @PrezzoUnitario)";
-                            command = new SqlCommand(query, connection, transaction);
-                            command.Parameters.AddWithValue("@OrderID", orderId);
-                            command.Parameters.AddWithValue("@ProductID", item.ProductID);
-                            command.Parameters.AddWithValue("@Quantità", item.Quantità);
-                            command.Parameters.AddWithValue("@PrezzoUnitario", item.Prodotto.Prezzo);
-                            command.ExecuteNonQuery();
-                        }
-
-                        SvuotaCarrello();
-
-                        transaction.Commit();
-                    }
-                    catch
-                    {
-                        transaction.Rollback();
-                        throw;
-                    }
+                    query = "INSERT INTO ProdottiOrdine (OrderID, ProductID, Quantità, PrezzoUnitario) VALUES (@OrderID, @ProductID, @Quantità, @PrezzoUnitario)";
+                    command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@OrderID", orderId);
+                    command.Parameters.AddWithValue("@ProductID", item.Prodotto.ProductID);
+                    command.Parameters.AddWithValue("@Quantità", item.Quantità);
+                    command.Parameters.AddWithValue("@PrezzoUnitario", item.Prodotto.Prezzo);
+                    command.ExecuteNonQuery();
                 }
+
+                // Svuota il carrello
+                SvuotaCarrello();
             }
         }
 
@@ -370,18 +381,23 @@ namespace Quarto__Mese_BW.Services
                         throw;
                     }
                 }
+
+                // Resetta l'auto-incremento dell'ID dell'ordine (solo se necessario e con cautela)
+                var resetQuery = "DBCC CHECKIDENT ('Ordini', RESEED, 0)";
+                var resetCommand = new SqlCommand(resetQuery, connection);
+                resetCommand.ExecuteNonQuery();
             }
         }
 
-        public IEnumerable<Ordine> GetOrdiniByUserId(int userId)
+
+        public IEnumerable<Ordine> GetOrdini()
         {
             var ordini = new List<Ordine>();
             using (var connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
-                var query = "SELECT * FROM Ordini WHERE UserID = @UserID";
+                var query = "SELECT * FROM Ordini";
                 var command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@UserID", userId);
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
@@ -400,6 +416,7 @@ namespace Quarto__Mese_BW.Services
             }
             return ordini;
         }
+
         public void AggiornaQuantitàProdottoOrdine(int orderId, int productId, int quantità)
         {
             using (var connection = new SqlConnection(_connectionString))
@@ -427,5 +444,28 @@ namespace Quarto__Mese_BW.Services
             }
         }
 
+        public int SalvaAnagrafica(Anagrafica anagrafica)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                var query = @"
+            INSERT INTO Anagrafica (Nome, Cognome, Email, Via, CAP, Città, Provincia, Telefono)
+            VALUES (@Nome, @Cognome, @Email, @Via, @CAP, @Città, @Provincia, @Telefono);
+            SELECT CAST(scope_identity() AS int)";
+                var command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Nome", anagrafica.Nome);
+                command.Parameters.AddWithValue("@Cognome", anagrafica.Cognome);
+                command.Parameters.AddWithValue("@Email", anagrafica.Email);
+                command.Parameters.AddWithValue("@Via", anagrafica.Via);
+                command.Parameters.AddWithValue("@CAP", anagrafica.CAP);
+                command.Parameters.AddWithValue("@Città", anagrafica.Città);
+                command.Parameters.AddWithValue("@Provincia", anagrafica.Provincia);
+                command.Parameters.AddWithValue("@Telefono", anagrafica.Telefono);
+                var userId = (int)command.ExecuteScalar();
+                _httpContextAccessor.HttpContext.Session.SetInt32("UserId", userId);
+                return userId;
+            }
+        }
     }
 }
