@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using Quarto__Mese_BW.Models;
 using System.Data.Common;
+using Microsoft.Data.SqlClient;
 
 namespace Quarto__Mese_BW.Services
 {

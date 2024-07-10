@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/adapter88/Desktop/Quarto _Mese_BW
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/adapter88/Desktop/Quarto _Mese_BW/Views/Admin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Desktop/Quarto _Mese_BW/Views/Admin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/adapter88/Desktop/Quarto _Mese_BW/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,12 +40,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EZXR0YWdsaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/adapter88/Desktop/Quarto _Mese_BW/Views/Home/DettagliOrdine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EZXR0YWdsaU9yZGluZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/adapter88/Desktop/Quarto _Mese_BW/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/adapter88/Desktop/Quarto _Mese_BW/Views/Home/Ordini.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9PcmRpbmkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/adapter88/Desktop/Quarto _Mese_BW/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Desktop/Quarto _Mese_BW/Views/Home/RiepilogoCarrello.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9SaWVwaWxvZ29DYXJyZWxsby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/adapter88/Desktop/Quarto _Mese_BW/Views/Home/Visualizza.cshtml]

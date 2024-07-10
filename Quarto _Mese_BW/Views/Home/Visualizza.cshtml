@@ -1,54 +1,78 @@
 ﻿@model IEnumerable<(Quarto__Mese_BW.Models.Prodotto Prodotto, int Quantità)>
-@using System.Globalization;
+@using System.Globalization
 
 @{
     ViewData["Title"] = "Carrello";
     var cultura = new CultureInfo("it-IT");
     decimal totaleCarrello = Model.Sum(item => item.Prodotto.Prezzo * item.Quantità);
+
+    var carrelloVuoto = TempData["CarrelloVuoto"] as bool?;
+}
+
+@if (carrelloVuoto == true)
+{
+    <script>
+        alert("Il tuo carrello è vuoto. Visita il nostro catalogo prodotti per trovare ciò che ti interessa.");
+        window.location.href = '@Url.Action("Index", "Home")';
+    </script>
 }
 
 <h2>Il tuo carrello (@ViewBag.NumeroProdotti prodotti)</h2>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Prezzo</th>
-            <th>Quantità</th>
-            <th>Totale</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+@if (!Model.Any())
+{
+    <div class="alert alert-warning" role="alert">
+        Il tuo carrello è vuoto. <a href="@Url.Action("Index", "Home")" class="alert-link">Visita il nostro catalogo prodotti</a> per trovare ciò che ti interessa.
+    </div>
+}
+else
+{
+    <table class="table">
+        <thead>
             <tr>
-                <td>@item.Prodotto.Nome</td>
-                <td>@item.Prodotto.Prezzo.ToString("C", cultura)</td>
-                <td>
-                    <form asp-controller="Home" asp-action="AggiornaQuantità" method="post" class="d-inline">
-                        <input type="hidden" name="productId" value="@item.Prodotto.ProductID" />
-                        <input type="number" name="quantità" value="@item.Quantità" min="1" class="form-control d-inline" style="width: 70px;" />
-                        <button type="submit" class="btn btn-secondary">Aggiorna</button>
-                    </form>
-                </td>
-                <td>@(item.Prodotto.Prezzo * item.Quantità).ToString("C", cultura)</td>
-                <td>
-                    <form asp-controller="Home" asp-action="Rimuovi" method="post" class="d-inline">
-                        <input type="hidden" name="productId" value="@item.Prodotto.ProductID" />
-                        <button type="submit" class="btn btn-danger">Rimuovi</button>
-                    </form>
-                </td>
+                <th>Nome</th>
+                <th>Prezzo</th>
+                <th>Quantità</th>
+                <th>Totale</th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Prodotto.Nome</td>
+                    <td>@item.Prodotto.Prezzo.ToString("C", cultura)</td>
+                    <td>
+                        <form asp-controller="Home" asp-action="AggiornaQuantità" method="post" class="d-inline">
+                            <input type="hidden" name="productId" value="@item.Prodotto.ProductID" />
+                            <input type="number" name="quantità" value="@item.Quantità" min="1" class="form-control d-inline" style="width: 70px;" />
+                            <button type="submit" class="btn btn-secondary">Aggiorna</button>
+                        </form>
+                    </td>
+                    <td>@(item.Prodotto.Prezzo * item.Quantità).ToString("C", cultura)</td>
+                    <td>
+                        <form asp-controller="Home" asp-action="Rimuovi" method="post" class="d-inline">
+                            <input type="hidden" name="productId" value="@item.Prodotto.ProductID" />
+                            <button type="submit" class="btn btn-danger">Rimuovi</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 
-<h3>Totale Carrello: @totaleCarrello.ToString("C", cultura)</h3>
+    <h3>Totale Carrello: @totaleCarrello.ToString("C", cultura)</h3>
+}
 
-<form asp-controller="Home" asp-action="SvuotaCarrello" method="post">
-    <button type="submit" class="btn btn-warning">Svuota Carrello</button>
-</form>
+@if (@ViewBag.NumeroProdotti > 0)
+{
+    <form asp-controller="Home" asp-action="SvuotaCarrello" method="post">
+        <button type="submit" class="btn btn-warning">Svuota Carrello</button>
+    </form>
+
+    <a href="@Url.Action("RiepilogoCarrello", "Home")" class="btn btn-secondary">Riepilogo Carrello</a>
+}
 
 <form asp-controller="Home" asp-action="Acquista" method="post">
     <button type="submit" class="btn btn-primary">Acquista</button>

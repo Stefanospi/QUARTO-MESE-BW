@@ -14,6 +14,10 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
+// Configure logging
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+
 // Register IHttpContextAccessor
 builder.Services.AddHttpContextAccessor();
 
@@ -22,6 +26,7 @@ builder.Services.AddTransient<IProdottoService, ProdottoService>();
 builder.Services.AddTransient<IAuthService, AuthService>();
 builder.Services.AddTransient<ICategoriaService, CategoriaService>();
 builder.Services.AddScoped<CarrelloService>(); // Registra CarrelloService come Scoped
+builder.Services.AddTransient<UserService>();
 
 var app = builder.Build();
 
