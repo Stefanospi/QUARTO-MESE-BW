@@ -4,68 +4,71 @@
     ViewData["Title"] = "Riepilogo Carrello";
     var cultura = new System.Globalization.CultureInfo("it-IT");
 }
-
-<h2>Riepilogo Carrello</h2>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Prezzo</th>
-            <th>Quantità</th>
-            <th>Totale</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.Prodotti)
-        {
+<div class="pt-3">
+    <h2>Riepilogo Carrello</h2>
+    <hr />
+    <table class="table table-bordered table-dark">
+        <thead>
             <tr>
-                <td>@item.Prodotto.Nome</td>
-                <td>@item.Prodotto.Prezzo.ToString("C", cultura)</td>
-                <td>@item.Quantità</td>
-                <td>@(item.Prodotto.Prezzo * item.Quantità).ToString("C", cultura)</td>
+                <th>Nome</th>
+                <th>Prezzo</th>
+                <th>Quantità</th>
+                <th>Totale</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Prodotti)
+            {
+                <tr>
+                    <td>@item.Prodotto.Nome</td>
+                    <td>@item.Prodotto.Prezzo.ToString("C", cultura)</td>
+                    <td>@item.Quantità</td>
+                    <td>@((item.Prodotto.Prezzo * item.Quantità).ToString("C", cultura))</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 
-<h3>Totale Carrello: @Model.Prodotti.Sum(item => item.Prodotto.Prezzo * item.Quantità).ToString("C", cultura)</h3>
+    <h3>Totale Carrello: @Model.Prodotti.Sum(item => item.Prodotto.Prezzo * item.Quantità).ToString("C", cultura)</h3>
 
-<hr />
-
-<h3>Dati Anagrafica</h3>
-<form asp-action="Acquista" method="post">
-    <div class="form-group">
-        <label for="Nome">Nome</label>
-        <input type="text" class="form-control" id="Nome" name="Anagrafica.Nome" required />
+    <hr />
+    <div class="description-div">
+        <h3>Dati Anagrafica</h3>
+        <hr />
+        <form asp-action="Acquista" method="post">
+            <div class="form-group p-3 details-description mb-4">
+                <label for="Nome" class="fs-5 fw-light">Nome</label>
+                <input type="text" class="form-control" id="Nome" name="Anagrafica.Nome" required />
+            </div>
+            <div class="form-group p-3 details-description my-4">
+                <label for="Cognome" class="fs-5 fw-light">Cognome</label>
+                <input type="text" class="form-control" id="Cognome" name="Anagrafica.Cognome" required />
+            </div>
+            <div class="form-group p-3 details-description my-4">
+                <label for="Email" class="fs-5 fw-light">Email</label>
+                <input type="email" class="form-control" id="Email" name="Anagrafica.Email" required />
+            </div>
+            <div class="form-group p-3 details-description my-4">
+                <label for="Via" class="fs-5 fw-light">Via</label>
+                <input type="text" class="form-control" id="Via" name="Anagrafica.Via" required />
+            </div>
+            <div class="form-group p-3 details-description my-4">
+                <label for="CAP" class="fs-5 fw-light">CAP</label>
+                <input type="text" class="form-control" id="CAP" name="Anagrafica.CAP" required />
+            </div>
+            <div class="form-group p-3 details-description my-4">
+                <label for="Città" class="fs-5 fw-light">Città</label>
+                <input type="text" class="form-control" id="Città" name="Anagrafica.Città" required />
+            </div>
+            <div class="form-group p-3 details-description my-4">
+                <label for="Provincia" class="fs-5 fw-light">Provincia</label>
+                <input type="text" class="form-control" id="Provincia" name="Anagrafica.Provincia" required />
+            </div>
+            <div class="form-group p-3 details-description my-4">
+                <label for="Telefono" class="fs-5 fw-light">Telefono</label>
+                <input type="text" class="form-control" id="Telefono" name="Anagrafica.Telefono" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Conferma Acquisto</button>
+        </form>
     </div>
-    <div class="form-group">
-        <label for="Cognome">Cognome</label>
-        <input type="text" class="form-control" id="Cognome" name="Anagrafica.Cognome" required />
-    </div>
-    <div class="form-group">
-        <label for="Email">Email</label>
-        <input type="email" class="form-control" id="Email" name="Anagrafica.Email" required />
-    </div>
-    <div class="form-group">
-        <label for="Via">Via</label>
-        <input type="text" class="form-control" id="Via" name="Anagrafica.Via" required />
-    </div>
-    <div class="form-group">
-        <label for="CAP">CAP</label>
-        <input type="text" class="form-control" id="CAP" name="Anagrafica.CAP" required />
-    </div>
-    <div class="form-group">
-        <label for="Città">Città</label>
-        <input type="text" class="form-control" id="Città" name="Anagrafica.Città" required />
-    </div>
-    <div class="form-group">
-        <label for="Provincia">Provincia</label>
-        <input type="text" class="form-control" id="Provincia" name="Anagrafica.Provincia" required />
-    </div>
-    <div class="form-group">
-        <label for="Telefono">Telefono</label>
-        <input type="text" class="form-control" id="Telefono" name="Anagrafica.Telefono" required />
-    </div>
-    <button type="submit" class="btn btn-primary">Conferma Acquisto</button>
-</form>
+</div>
