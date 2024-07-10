@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Quarto__Mese_BW.Models.Ordine>
 
 @{
-    ViewData["Title"] = "I tuoi ordini";
+    ViewData["Title"] = "Ordini";
 }
 <div class="pt-3">
     <h2>I tuoi ordini</h2>
@@ -47,3 +47,44 @@
 
     <a href="@Url.Action("Index", "Home")" class="btn btn-secondary mt-3">Torna alla Home</a>
 </div>
+=======
+<h2>I tuoi ordini</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info" role="alert">
+        Non ci sono ordini. Vai al <a href="@Url.Action("Index", "Home")" class="alert-link">catalogo dei prodotti</a> per effettuare un acquisto.
+    </div>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID Ordine</th>
+                <th>Data Ordine</th>
+                <th>Stato</th>
+                <th>Totale</th>
+                <th>Azioni</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ordine in Model)
+            {
+                <tr>
+                    <td>@ordine.OrderID</td>
+                    <td>@ordine.DataOrdine.ToString("dd/MM/yyyy")</td>
+                    <td>@ordine.Stato</td>
+                    <td>@ordine.Totale.ToString("C")</td>
+                    <td>
+                        <a asp-action="DettagliOrdine" asp-route-id="@ordine.OrderID" class="btn btn-info">Dettagli</a>
+                        <form asp-action="EliminaOrdine" method="post" class="d-inline">
+                            <input type="hidden" name="orderId" value="@ordine.OrderID" />
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Sei sicuro di voler eliminare questo ordine?');">Elimina</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

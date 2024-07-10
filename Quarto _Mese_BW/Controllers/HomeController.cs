@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Quarto__Mese_BW.Models;
 using Quarto__Mese_BW.Services;
 using Quarto__Mese_BW.ViewModels;
+using Microsoft.AspNetCore.Http;
 
 namespace Quarto__Mese_BW.Controllers
 {
@@ -15,8 +16,9 @@ namespace Quarto__Mese_BW.Controllers
         private readonly IAuthService _authService;
         private readonly IConfiguration _configuration;
         private readonly ILogger<UserService> _userServiceLogger;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public HomeController(IProdottoService prodottoService, CarrelloService carrelloService, IAuthService authService, IConfiguration configuration, ILogger<HomeController> logger, ILogger<UserService> userServiceLogger)
+        public HomeController(IProdottoService prodottoService, CarrelloService carrelloService, IAuthService authService, IConfiguration configuration, ILogger<HomeController> logger, ILogger<UserService> userServiceLogger, IHttpContextAccessor httpContextAccessor)
         {
             _prodottoService = prodottoService;
             _carrelloService = carrelloService;
@@ -24,12 +26,13 @@ namespace Quarto__Mese_BW.Controllers
             _configuration = configuration;
             _logger = logger;
             _userServiceLogger = userServiceLogger;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public IActionResult RiepilogoCarrello()
         {
             var carrelloItems = _carrelloService.GetCarrelloProdotti();
-            var user = _carrelloService.GetFirstAnagrafica();
+            var user = new Anagrafica(); // Initialize an empty Anagrafica object
 
             var modello = new RiepilogoCarrelloViewModel
             {
@@ -38,7 +41,6 @@ namespace Quarto__Mese_BW.Controllers
             };
             return View(modello);
         }
-
 
         public IActionResult Index()
         {
@@ -94,7 +96,6 @@ namespace Quarto__Mese_BW.Controllers
             return View(prodotti);
         }
 
-
         [HttpPost]
         public IActionResult EliminaOrdine(int orderId)
         {
@@ -103,8 +104,7 @@ namespace Quarto__Mese_BW.Controllers
         }
 
         [HttpPost]
-        [HttpPost]
-        public IActionResult Acquista()
+        public IActionResult Acquista(Anagrafica anagrafica)
         {
             if (_carrelloService.IsEmpty())
             {
@@ -112,26 +112,25 @@ namespace Quarto__Mese_BW.Controllers
                 return RedirectToAction("Visualizza");
             }
 
-            var user = _carrelloService.GetFirstAnagrafica();
-            if (user == null)
+            if (ModelState.IsValid)
             {
-                throw new Exception("Nessun utente trovato nella tabella Anagrafica.");
+                _carrelloService.CompletaAcquisto(anagrafica);
+                return View("ConfermaAcquisto");
             }
 
-            _carrelloService.CompletaAcquisto();
-            return View("ConfermaAcquisto");
+            var carrelloItems = _carrelloService.GetCarrelloProdotti();
+            var prodotti = carrelloItems.Select(item => (item.Prodotto, item.Quantità));
+            var modello = new RiepilogoCarrelloViewModel
+            {
+                Prodotti = prodotti.ToList(),
+                Anagrafica = anagrafica
+            };
+            return View("RiepilogoCarrello", modello);
         }
-
 
         public IActionResult Ordini()
         {
-            var user = _carrelloService.GetFirstAnagrafica();
-            if (user == null)
-            {
-                return View(new List<Ordine>()); // Ritorna una lista vuota se non c'è nessun utente
-            }
-
-            var ordini = _carrelloService.GetOrdiniByUserId(user.UserID);
+            var ordini = _carrelloService.GetOrdini();
             return View(ordini);
         }
 
@@ -140,8 +139,6 @@ namespace Quarto__Mese_BW.Controllers
             var ordineDettaglio = _carrelloService.GetOrdineDettaglioById(id);
             return View(ordineDettaglio);
         }
-
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -163,5 +160,15 @@ namespace Quarto__Mese_BW.Controllers
             return RedirectToAction("DettagliOrdine", new { id = orderId });
         }
 
+        [HttpPost]
+        public IActionResult SalvaAnagrafica(Anagrafica anagrafica)
+        {
+            if (ModelState.IsValid)
+            {
+                _carrelloService.SalvaAnagrafica(anagrafica);
+                TempData["AnagraficaSalvata"] = true;
+            }
+            return RedirectToAction("RiepilogoCarrello");
+        }
     }
 }
