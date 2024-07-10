@@ -3,46 +3,47 @@
 @{
     ViewData["Title"] = "I tuoi ordini";
 }
+<div class="pt-3">
+    <h2>I tuoi ordini</h2>
 
-<h2>I tuoi ordini</h2>
-
-@if (!Model.Any())
-{
-    <div class="alert alert-warning" role="alert">
-        Non hai ordini attivi. <a href="@Url.Action("Index", "Home")" class="alert-link">Visita il nostro catalogo prodotti</a> per effettuare un acquisto.
-    </div>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>OrderID</th>
-                <th>Data Ordine</th>
-                <th>Stato</th>
-                <th>Totale</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var ordine in Model)
-            {
+    @if (!Model.Any())
+    {
+        <div class="alert alert-warning" role="alert">
+            Non hai ordini attivi. <a href="@Url.Action("Index", "Home")" class="alert-link">Visita il nostro catalogo prodotti</a> per effettuare un acquisto.
+        </div>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
                 <tr>
-                    <td>@ordine.OrderID</td>
-                    <td>@ordine.DataOrdine.ToString("g")</td>
-                    <td>@ordine.Stato</td>
-                    <td>@ordine.Totale.ToString("C")</td>
-                    <td>
-                        <a href="@Url.Action("DettagliOrdine", "Home", new { id = ordine.OrderID })" class="btn btn-primary">Dettagli</a>
-                        <form asp-controller="Home" asp-action="EliminaOrdine" method="post" class="d-inline" onsubmit="return confirm('Sei sicuro di voler eliminare questo ordine?');">
-                            <input type="hidden" name="orderId" value="@ordine.OrderID" />
-                            <button type="submit" class="btn btn-danger">Elimina</button>
-                        </form>
-                    </td>
+                    <th>OrderID</th>
+                    <th>Data Ordine</th>
+                    <th>Stato</th>
+                    <th>Totale</th>
+                    <th></th>
                 </tr>
-            }
-        </tbody>
-    </table>
-}
+            </thead>
+            <tbody>
+                @foreach (var ordine in Model)
+                {
+                    <tr>
+                        <td>@ordine.OrderID</td>
+                        <td>@ordine.DataOrdine.ToString("g")</td>
+                        <td>@ordine.Stato</td>
+                        <td>@ordine.Totale.ToString("C")</td>
+                        <td>
+                            <a href="@Url.Action("DettagliOrdine", "Home", new { id = ordine.OrderID })" class="btn btn-primary">Dettagli</a>
+                            <form asp-controller="Home" asp-action="EliminaOrdine" method="post" class="d-inline" onsubmit="return confirm('Sei sicuro di voler eliminare questo ordine?');">
+                                <input type="hidden" name="orderId" value="@ordine.OrderID" />
+                                <button type="submit" class="btn btn-danger">Elimina</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
 
-<a href="@Url.Action("Index", "Home")" class="btn btn-secondary mt-3">Torna alla Home</a>
+    <a href="@Url.Action("Index", "Home")" class="btn btn-secondary mt-3">Torna alla Home</a>
+</div>

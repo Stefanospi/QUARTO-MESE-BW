@@ -42,12 +42,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXR0YWdsaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Home/DettagliOrdine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXR0YWdsaU9yZGluZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Home/Ordini.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcmRpbmkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Home/RiepilogoCarrello.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSaWVwaWxvZ29DYXJyZWxsby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/franc/source/repos/QUARTO-MESE-BW/Quarto _Mese_BW/Views/Home/Visualizza.cshtml]
