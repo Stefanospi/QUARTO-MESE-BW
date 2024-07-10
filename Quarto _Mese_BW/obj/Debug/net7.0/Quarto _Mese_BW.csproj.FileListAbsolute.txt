@@ -87,3 +87,15 @@ D:\Epicode\QUARTO MESE\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\refint\Qu
 D:\Epicode\QUARTO MESE\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\Quarto _Mese_BW.pdb
 D:\Epicode\QUARTO MESE\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\Quarto _Mese_BW.genruntimeconfig.cache
 D:\Epicode\QUARTO MESE\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\ref\Quarto _Mese_BW.dll
+C:\Users\franc\source\repos\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\Quarto _Mese_BW.csproj.AssemblyReference.cache
+C:\Users\franc\source\repos\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\Quarto _Mese_BW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\source\repos\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\Quarto _Mese_BW.AssemblyInfoInputs.cache
+C:\Users\franc\source\repos\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\Quarto _Mese_BW.AssemblyInfo.cs
+C:\Users\franc\source\repos\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\Quarto _Mese_BW.csproj.CoreCompileInputs.cache
+C:\Users\franc\source\repos\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\Quarto _Mese_BW.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\franc\source\repos\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\Quarto _Mese_BW.RazorAssemblyInfo.cache
+C:\Users\franc\source\repos\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\Quarto _Mese_BW.RazorAssemblyInfo.cs
+C:\Users\franc\source\repos\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\Quarto _Mese_BW.sourcelink.json
+C:\Users\franc\source\repos\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\Quarto _Mese_BW.dll
+C:\Users\franc\source\repos\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\refint\Quarto _Mese_BW.dll
+C:\Users\franc\source\repos\QUARTO-MESE-BW\Quarto _Mese_BW\obj\Debug\net7.0\Quarto _Mese_BW.pdb
