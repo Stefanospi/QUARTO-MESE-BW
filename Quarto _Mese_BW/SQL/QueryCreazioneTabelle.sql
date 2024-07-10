@@ -66,6 +66,3 @@ INSERT INTO Prodotti (Nome, Descrizione, Prezzo, ImmagineUrl, Stock, CategoriaID
 ('Smartphone', 'Un fantastico smartphone con tutte le funzionalità più recenti.', 599.99, '/img/smartphone.jpg', 50, 1),
 ('Libro', 'Un romanzo avvincente che ti terrà incollato alle pagine.', 19.99, '/img/libro.jpg', 100, 2),
 ('T-shirt', 'Una T-shirt di alta qualità disponibile in varie taglie.', 29.99, '/img/tshirt.jpg', 75, 3);
-
-INSERT INTO Anagrafica (Nome, Cognome, Email, Via, CAP, Città, Provincia, Telefono) VALUES 
-('Pippo', 'Baudo', 'pippo.baudo@example.com', 'Via della Televisione, 1', '00100', 'Roma', 'RM', '1234567890');

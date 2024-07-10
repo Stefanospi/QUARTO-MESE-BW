@@ -1,24 +1,12 @@
 ﻿@model Quarto__Mese_BW.ViewModels.RiepilogoCarrelloViewModel
-@using System.Globalization
 
 @{
     ViewData["Title"] = "Riepilogo Carrello";
-    var cultura = new CultureInfo("it-IT");
-
-    var carrelloVuoto = TempData["CarrelloVuoto"] as bool?;
-}
-
-@if (carrelloVuoto == true)
-{
-    <script>
-        alert("Il tuo carrello è vuoto. Visita il nostro catalogo prodotti per trovare ciò che ti interessa.");
-        window.location.href = '@Url.Action("Index", "Home")';
-    </script>
+    var cultura = new System.Globalization.CultureInfo("it-IT");
 }
 
 <h2>Riepilogo Carrello</h2>
 
-<h3>Prodotti nel Carrello</h3>
 <table class="table">
     <thead>
         <tr>
@@ -29,37 +17,55 @@
         </tr>
     </thead>
     <tbody>
-        @if (Model?.Prodotti != null)
+        @foreach (var item in Model.Prodotti)
         {
-            @foreach (var item in Model.Prodotti)
-            {
-                <tr>
-                    <td>@item.Prodotto.Nome</td>
-                    <td>@item.Prodotto.Prezzo.ToString("C", cultura)</td>
-                    <td>@item.Quantità</td>
-                    <td>@(item.Prodotto.Prezzo * item.Quantità).ToString("C", cultura)</td>
-                </tr>
-            }
+            <tr>
+                <td>@item.Prodotto.Nome</td>
+                <td>@item.Prodotto.Prezzo.ToString("C", cultura)</td>
+                <td>@item.Quantità</td>
+                <td>@(item.Prodotto.Prezzo * item.Quantità).ToString("C", cultura)</td>
+            </tr>
         }
     </tbody>
 </table>
 
-<h3>Dati dell'Anagrafica</h3>
-@if (Model?.Anagrafica != null)
-{
-    <p>Nome: @Model.Anagrafica.Nome</p>
-    <p>Cognome: @Model.Anagrafica.Cognome</p>
-    <p>Email: @Model.Anagrafica.Email</p>
-    <p>Indirizzo: @Model.Anagrafica.Via, @Model.Anagrafica.CAP, @Model.Anagrafica.Città, @Model.Anagrafica.Provincia</p>
-    <p>Telefono: @Model.Anagrafica.Telefono</p>
-}
-else
-{
-    <p>Dati dell'anagrafica non disponibili.</p>
-}
+<h3>Totale Carrello: @Model.Prodotti.Sum(item => item.Prodotto.Prezzo * item.Quantità).ToString("C", cultura)</h3>
 
-<form asp-controller="Home" asp-action="Acquista" method="post">
+<hr />
+
+<h3>Dati Anagrafica</h3>
+<form asp-action="Acquista" method="post">
+    <div class="form-group">
+        <label for="Nome">Nome</label>
+        <input type="text" class="form-control" id="Nome" name="Anagrafica.Nome" required />
+    </div>
+    <div class="form-group">
+        <label for="Cognome">Cognome</label>
+        <input type="text" class="form-control" id="Cognome" name="Anagrafica.Cognome" required />
+    </div>
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" class="form-control" id="Email" name="Anagrafica.Email" required />
+    </div>
+    <div class="form-group">
+        <label for="Via">Via</label>
+        <input type="text" class="form-control" id="Via" name="Anagrafica.Via" required />
+    </div>
+    <div class="form-group">
+        <label for="CAP">CAP</label>
+        <input type="text" class="form-control" id="CAP" name="Anagrafica.CAP" required />
+    </div>
+    <div class="form-group">
+        <label for="Città">Città</label>
+        <input type="text" class="form-control" id="Città" name="Anagrafica.Città" required />
+    </div>
+    <div class="form-group">
+        <label for="Provincia">Provincia</label>
+        <input type="text" class="form-control" id="Provincia" name="Anagrafica.Provincia" required />
+    </div>
+    <div class="form-group">
+        <label for="Telefono">Telefono</label>
+        <input type="text" class="form-control" id="Telefono" name="Anagrafica.Telefono" required />
+    </div>
     <button type="submit" class="btn btn-primary">Conferma Acquisto</button>
 </form>
-
-<a href="@Url.Action("Index", "Home")" class="btn btn-secondary">Torna alla Home</a>
