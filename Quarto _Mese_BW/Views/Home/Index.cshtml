@@ -23,8 +23,8 @@
                         <p class="card-text">Prezzo: @prodotto.Prezzo.ToString("C")</p>
                         <form asp-controller="Home" asp-action="Aggiungi" method="post">
                             <input type="hidden" name="productId" value="@prodotto.ProductID" />
-                            <input type="number" name="quantità" value="1" min="1" class="form-control mb-2" />
-                            <button type="submit" class="btn btn-primary">Aggiungi al carrello</button>
+                            <input type="number" name="quantità" value="1" min="1" class=" form-control input-cart mb-2" />
+                            <button type="submit" class="btn">Aggiungi al carrello</button>
                         </form>
                         <form asp-controller="Home" asp-action="Dettagli">
                             <input type="hidden" name="id" value="@prodotto.ProductID" />

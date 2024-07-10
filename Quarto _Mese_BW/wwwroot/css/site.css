@@ -99,6 +99,13 @@ body {
     color: white;
 }
 
+.input-cart {
+    width: 3em !important;
+    background: transparent !important;
+    color: white !important;
+    outline: none !important;
+}
+
 /*footer*/
 footer {
     border-top: 1px solid #212529;
