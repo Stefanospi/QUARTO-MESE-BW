@@ -1,351 +1,259 @@
 {
   "Files": [
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Quarto _Mese_BW.bundle.scp.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Quarto _Mese_BW.bundle.scp.css",
       "PackagePath": "staticwebassets\\Quarto _Mese_BW.bundle.scp.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\18083b89-81d4-4ac3-9583-ff04635d4678_pass mySQL.jpg",
-      "PackagePath": "staticwebassets\\img\\18083b89-81d4-4ac3-9583-ff04635d4678_pass mySQL.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\2700da16-2e8b-4c00-96ab-753bde3c876c_hshsh.jpg",
-      "PackagePath": "staticwebassets\\img\\2700da16-2e8b-4c00-96ab-753bde3c876c_hshsh.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\29aedaec-3a93-45fb-9ec8-27d5ff449fa4_R.jpg",
-      "PackagePath": "staticwebassets\\img\\29aedaec-3a93-45fb-9ec8-27d5ff449fa4_R.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\4ca8613d-9810-4ae5-8aae-ade24a57e772_Schema tabelle.png",
-      "PackagePath": "staticwebassets\\img\\4ca8613d-9810-4ae5-8aae-ade24a57e772_Schema tabelle.png"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\672da344-7158-4549-a65b-92c9e7b46679_Screenshot 2024-07-05 135930.png",
-      "PackagePath": "staticwebassets\\img\\672da344-7158-4549-a65b-92c9e7b46679_Screenshot 2024-07-05 135930.png"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\6c4d7418-3c4a-4aad-b0d2-47ac73973dc8_dish-5.png",
-      "PackagePath": "staticwebassets\\img\\6c4d7418-3c4a-4aad-b0d2-47ac73973dc8_dish-5.png"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\7ac26123-21dd-43ca-89f4-95f84241c625_menu-2.jpg",
-      "PackagePath": "staticwebassets\\img\\7ac26123-21dd-43ca-89f4-95f84241c625_menu-2.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\8b2dcdc1-4832-4502-ae2f-f5fa353aba4d_menu-3.jpg",
-      "PackagePath": "staticwebassets\\img\\8b2dcdc1-4832-4502-ae2f-f5fa353aba4d_menu-3.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\90bc571a-12a2-418a-98ef-286ea05aac88_pic-1.png",
-      "PackagePath": "staticwebassets\\img\\90bc571a-12a2-418a-98ef-286ea05aac88_pic-1.png"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\915e18d6-f95a-4597-b0e7-24157efe58bd_R.jpg",
-      "PackagePath": "staticwebassets\\img\\915e18d6-f95a-4597-b0e7-24157efe58bd_R.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\a935e791-ab96-40c0-91b3-b62140fe4fe0_menu-3.jpg",
-      "PackagePath": "staticwebassets\\img\\a935e791-ab96-40c0-91b3-b62140fe4fe0_menu-3.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\ab9f64d1-ee74-41d7-98f8-2911d1d8bbf5_R.jpg",
-      "PackagePath": "staticwebassets\\img\\ab9f64d1-ee74-41d7-98f8-2911d1d8bbf5_R.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\b7672afa-6cea-423e-a11d-59ddb3562682_dish-3.png",
-      "PackagePath": "staticwebassets\\img\\b7672afa-6cea-423e-a11d-59ddb3562682_dish-3.png"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\bfb8bee2-2e95-4882-ad65-a0f8aa81ecc9_menu-7.jpg",
-      "PackagePath": "staticwebassets\\img\\bfb8bee2-2e95-4882-ad65-a0f8aa81ecc9_menu-7.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\c05edfc6-5dd8-4976-96fe-b316bb49046b_menu-8.jpg",
-      "PackagePath": "staticwebassets\\img\\c05edfc6-5dd8-4976-96fe-b316bb49046b_menu-8.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\c46795c7-aae2-4d39-b800-42b6f65fa139_menu-5.jpg",
-      "PackagePath": "staticwebassets\\img\\c46795c7-aae2-4d39-b800-42b6f65fa139_menu-5.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\c4aae96f-8ab9-4db3-9bc6-2f7bbfdd41cc_R.jpg",
-      "PackagePath": "staticwebassets\\img\\c4aae96f-8ab9-4db3-9bc6-2f7bbfdd41cc_R.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\c760c28f-e777-44af-ab36-b27f4fc4b921_menu-2.jpg",
-      "PackagePath": "staticwebassets\\img\\c760c28f-e777-44af-ab36-b27f4fc4b921_menu-2.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\d8a26d5f-5a53-4616-b341-bb8dac4a76d5_pass mySQL.jpg",
-      "PackagePath": "staticwebassets\\img\\d8a26d5f-5a53-4616-b341-bb8dac4a76d5_pass mySQL.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\e1252a6b-b552-46de-a222-5292f3ca04f1_menu-3.jpg",
-      "PackagePath": "staticwebassets\\img\\e1252a6b-b552-46de-a222-5292f3ca04f1_menu-3.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\e4c51c3d-76c9-4267-a907-056fe60970b5_hshsh.jpg",
-      "PackagePath": "staticwebassets\\img\\e4c51c3d-76c9-4267-a907-056fe60970b5_hshsh.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\edd65c82-2a74-432d-adb8-e172a9d15658_menu-9.jpg",
-      "PackagePath": "staticwebassets\\img\\edd65c82-2a74-432d-adb8-e172a9d15658_menu-9.jpg"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\fae5f5e9-064c-4995-a578-ea9e6ece8762_Screenshot 2023-06-11 120747.png",
-      "PackagePath": "staticwebassets\\img\\fae5f5e9-064c-4995-a578-ea9e6ece8762_Screenshot 2023-06-11 120747.png"
-    },
-    {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\libro.jpg",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\libro.jpg",
       "PackagePath": "staticwebassets\\img\\libro.jpg"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\smartphone.jpg",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\smartphone.jpg",
       "PackagePath": "staticwebassets\\img\\smartphone.jpg"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\tshirt.jpg",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\tshirt.jpg",
       "PackagePath": "staticwebassets\\img\\tshirt.jpg"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

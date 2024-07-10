@@ -25,10 +25,15 @@ namespace Quarto__Mese_BW.Controllers
             _hostingEnvironment = hostingEnvironment;
         }
 
-       
+
 
         public IActionResult Login()
         {
+            if (HttpContext.Session.GetString("IsAdmin") == "true")
+            {
+                return RedirectToAction("Index");
+            }
+
             return View();
         }
 

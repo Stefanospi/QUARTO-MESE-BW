@@ -2,13 +2,19 @@
 using System.Data.SqlClient;
 using Quarto__Mese_BW.Models;
 using System.Data.Common;
-using Microsoft.Data.SqlClient;
+using Microsoft.AspNetCore.Hosting;
+using System.IO;
 
 namespace Quarto__Mese_BW.Services
 {
     public class ProdottoService : SqlServerServiceBase, IProdottoService
     {
-        public ProdottoService(IConfiguration config) : base(config) { }
+        private readonly IWebHostEnvironment _hostingEnvironment;
+
+        public ProdottoService(IConfiguration config, IWebHostEnvironment hostingEnvironment) : base(config)
+        {
+            _hostingEnvironment = hostingEnvironment;
+        }
 
         public IEnumerable<Prodotto> GetAllProdotti()
         {
@@ -89,19 +95,37 @@ namespace Quarto__Mese_BW.Services
         {
             using var conn = GetConnection();
             conn.Open();
-            using var cmd = GetCommand("DELETE FROM Prodotti WHERE ProductID = @id");
-            cmd.Parameters.Add(new SqlParameter("@id", id));
-            cmd.ExecuteNonQuery();
-        }
-        //public string GetCategoriaNomeById(int id)
-        //{
-        //    using var conn = GetConnection();
-        //    conn.Open();
-        //    using var cmd = GetCommand("SELECT NomeCategoria FROM Categorie WHERE CategoriaID = @id");
-        //    cmd.Parameters.Add(new SqlParameter("@id", id));
-        //    var nomeCategoria = cmd.ExecuteScalar();
-        //    return nomeCategoria?.ToString();
-        //}
 
+            // Recupera l'URL dell'immagine del prodotto
+            string imageUrl = null;
+            using (var cmd = GetCommand("SELECT ImmagineUrl FROM Prodotti WHERE ProductID = @id"))
+            {
+                cmd.Parameters.Add(new SqlParameter("@id", id));
+                using (var reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        imageUrl = reader.IsDBNull(0) ? null : reader.GetString(0);
+                    }
+                }
+            }
+
+            // Elimina il file dell'immagine se esiste
+            if (!string.IsNullOrEmpty(imageUrl))
+            {
+                string filePath = Path.Combine(_hostingEnvironment.WebRootPath, imageUrl.TrimStart('/'));
+                if (File.Exists(filePath))
+                {
+                    File.Delete(filePath);
+                }
+            }
+
+            // Elimina il prodotto dal database
+            using (var cmd = GetCommand("DELETE FROM Prodotti WHERE ProductID = @id"))
+            {
+                cmd.Parameters.Add(new SqlParameter("@id", id));
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }
