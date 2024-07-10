@@ -4,6 +4,7 @@ using Quarto__Mese_BW.Models;
 using System.Data.Common;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
+using Microsoft.Data.SqlClient;
 
 namespace Quarto__Mese_BW.Services
 {
