@@ -1,0 +1,65 @@
+﻿@model Quarto__Mese_BW.ViewModels.RiepilogoCarrelloViewModel
+@using System.Globalization
+
+@{
+    ViewData["Title"] = "Riepilogo Carrello";
+    var cultura = new CultureInfo("it-IT");
+
+    var carrelloVuoto = TempData["CarrelloVuoto"] as bool?;
+}
+
+@if (carrelloVuoto == true)
+{
+    <script>
+        alert("Il tuo carrello è vuoto. Visita il nostro catalogo prodotti per trovare ciò che ti interessa.");
+        window.location.href = '@Url.Action("Index", "Home")';
+    </script>
+}
+
+<h2>Riepilogo Carrello</h2>
+
+<h3>Prodotti nel Carrello</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Prezzo</th>
+            <th>Quantità</th>
+            <th>Totale</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model?.Prodotti != null)
+        {
+            @foreach (var item in Model.Prodotti)
+            {
+                <tr>
+                    <td>@item.Prodotto.Nome</td>
+                    <td>@item.Prodotto.Prezzo.ToString("C", cultura)</td>
+                    <td>@item.Quantità</td>
+                    <td>@(item.Prodotto.Prezzo * item.Quantità).ToString("C", cultura)</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<h3>Dati dell'Anagrafica</h3>
+@if (Model?.Anagrafica != null)
+{
+    <p>Nome: @Model.Anagrafica.Nome</p>
+    <p>Cognome: @Model.Anagrafica.Cognome</p>
+    <p>Email: @Model.Anagrafica.Email</p>
+    <p>Indirizzo: @Model.Anagrafica.Via, @Model.Anagrafica.CAP, @Model.Anagrafica.Città, @Model.Anagrafica.Provincia</p>
+    <p>Telefono: @Model.Anagrafica.Telefono</p>
+}
+else
+{
+    <p>Dati dell'anagrafica non disponibili.</p>
+}
+
+<form asp-controller="Home" asp-action="Acquista" method="post">
+    <button type="submit" class="btn btn-primary">Conferma Acquisto</button>
+</form>
+
+<a href="@Url.Action("Index", "Home")" class="btn btn-secondary">Torna alla Home</a>
