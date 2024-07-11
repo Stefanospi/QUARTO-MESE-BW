@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tah939oH++zCStbY4Fp0BKKJgUZnJPkMpM1x9oXncv4=",
+  "Hash": "NM3la5NR0b9BECFvC/kgNlWnRVy3Xedfwlt5Ss4mvVk=",
   "Source": "Quarto _Mese_BW",
   "BasePath": "_content/Quarto _Mese_BW",
   "Mode": "Default",
@@ -454,25 +454,6 @@
       "OriginalItemSpec": "wwwroot\\img\\faed8a2b-fa33-4cd0-87c1-f45cd839bdb1_Coppetta Baileys.png.jpeg"
     },
     {
-      "Identity": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\libro.jpg",
-      "SourceId": "Quarto _Mese_BW",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\",
-      "BasePath": "_content/Quarto _Mese_BW",
-      "RelativePath": "img/libro.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\libro.jpg"
-    },
-    {
       "Identity": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\smartphone.jpg",
       "SourceId": "Quarto _Mese_BW",
       "SourceType": "Discovered",
@@ -490,25 +471,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\smartphone.jpg"
-    },
-    {
-      "Identity": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\tshirt.jpg",
-      "SourceId": "Quarto _Mese_BW",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\",
-      "BasePath": "_content/Quarto _Mese_BW",
-      "RelativePath": "img/tshirt.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\tshirt.jpg"
     },
     {
       "Identity": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\js\\site.js",

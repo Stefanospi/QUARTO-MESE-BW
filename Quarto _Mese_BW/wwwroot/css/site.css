@@ -1,7 +1,7 @@
 ﻿/*impostazioni generali*/
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
 
 html {
     font-size: 14px;
@@ -23,7 +23,6 @@ html {
 }
 
 body {
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
     background: rgb(103, 66, 48);
     color: white
 }
@@ -54,6 +53,7 @@ body {
 }
 
 .navbar a {
+    font-family: "Playwrite CU", Arial, Helvetica, sans-serif;
     color: white;
     border-bottom: 1px solid transparent;
     margin: 0px 8px;
@@ -76,6 +76,10 @@ body {
 
 .card-img-top{
     height: 15em;
+}
+.card-title{
+    font-family: "Playwrite CU", Arial, Helvetica, sans-serif !important;
+    font-size:0.7em !important;
 }
 
 .card-title, .details-description, .details-text, .bg-custom {
@@ -156,6 +160,12 @@ body {
         font-size: 1.2em;
         text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     }
+
+/* HomePage */
+
+.personal-font {
+    font-family: "Playwrite CU", Arial, Helvetica, sans-serif;
+}
 
 /*footer*/
 footer {
