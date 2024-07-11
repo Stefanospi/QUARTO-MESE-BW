@@ -7,14 +7,14 @@
 <div class="pt-4">
     <h1>@Html.DisplayFor(model => model.Nome)</h1>
     <hr />
-    <div class="d-flex justify-content-around">
-        <div class="img-container">
-            <img src="@Model.ImmagineUrl" class="w-100" alt="Alternate Text">
+    <div class="d-flex justify-content-around flex-wrap">
+        <div class="img-container pb-5">
+            <img src="@Model.ImmagineUrl" class="w-100 shadow" alt="Alternate Text">
         </div>
         <div class="d-flex flex-column gap-3 description-div">
-            <h5 class="details-description">@Html.DisplayFor(model => model.Descrizione)</h5>
+            <h5 class="details-description shadow">@Html.DisplayFor(model => model.Descrizione)</h5>
             <hr />
-            <div class="details-text fs-5 fw-normal">
+            <div class="details-text fs-5 fw-normal shadow">
                 <p>Prezzo: @Html.DisplayFor(model => model.Prezzo) €</p>
                 <p>Pezzi disponibili: @Html.DisplayFor(model => model.Stock)</p>
                 <p>Categoria: @Html.DisplayFor(model => model.CategoriaID)</p>

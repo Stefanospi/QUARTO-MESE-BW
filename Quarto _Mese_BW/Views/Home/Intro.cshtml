@@ -1,0 +1,60 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benvenuto su Epicake</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+
+    <div id="introCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#introCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#introCarousel" data-slide-to="1"></li>
+            <li data-target="#introCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('/CarouselImg/dolci_SHub_1280x595_Visual.webp');">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Benvenuto su Epicake</h5>
+                    <p>Scopri le nostre deliziose torte e pasticcini</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('/CarouselImg/dolci-con-pochi-ingredienti.webp');">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fatto a mano con amore</h5>
+                    <p>Ogni torta è realizzata con gli ingredienti migliori</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('/CarouselImg/ricette-dolci-al-cioccolato.webp');">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ordina online</h5>
+                    <p>Ricevi le tue torte preferite direttamente a casa tua</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Precedente</span>
+        </a>
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Successivo</span>
+        </a>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="@Url.Action("Index", "Home")" class="btn">Entra nel sito</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

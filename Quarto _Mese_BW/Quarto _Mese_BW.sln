@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1706.12
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quarto _Mese_BW", "Quarto _Mese_BW.csproj", "{770095D6-E231-4553-97BB-E800B2AFECF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quarto _Mese_BW", "Quarto _Mese_BW.csproj", "{770095D6-E231-4553-97BB-E800B2AFECF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

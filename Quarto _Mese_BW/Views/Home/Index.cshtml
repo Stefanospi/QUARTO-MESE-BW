@@ -7,15 +7,15 @@
 <div class="container">
     <div class="row py-3">
         <div class="col text-center">
-            <h1>E-Commerce</h1>
+            <h1 class="personal-font">Bakery House</h1>
             <hr />
         </div>
     </div>
 
-    <div class="row">
+    <div class="row mx-5 mx-md-0">
         @foreach (var prodotto in Model)
         {
-            <div class="col-md-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
                 <div class="card mb-4 shadow-sm">
                     <img src="@Url.Content(prodotto.ImmagineUrl)" class="card-img-top" alt="@prodotto.Nome">
                     <div class="card-body">

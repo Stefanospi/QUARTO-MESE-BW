@@ -10,7 +10,11 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm">
-            <a class="navbar-brand" href="@Url.Action("Index", "Home")">ECommerce</a>
+            <div class="logo-navbar ms-3">
+                <a class="navbar-brand m-0" href="@Url.Action("Index", "Home")">
+                    <img src="/Logo/image.png" alt="Logo" class="w-100" />
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -57,23 +61,23 @@
                 <div class="col-6 col-md-2 mb-3">
                     <h5>Azienda</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">Chi siamo</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">Opportunità di lavoro</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-light p-0 text-body-secondary">Chi siamo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-light  p-0 text-body-secondary">Opportunità di lavoro</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-light p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-light p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-light p-0 text-body-secondary">About</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md-2 mb-3">
                     <h5>Link Utili</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">Assistenza</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">Diritti del consumatore</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">App per cellulare</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-light p-0 text-body-secondary">Assistenza</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-light p-0 text-body-secondary">Diritti del consumatore</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-light p-0 text-body-secondary">App per cellulare</a></li>
                     </ul>
                 </div>
 
-                <div class="col-md-5 mb-3">
+                <div class="col-md-5 mb-3 bg-custom p-3">
                     <form>
                         <h5>Subscribe to our newsletter</h5>
                         <p>Monthly digest of what's new and exciting from us.</p>

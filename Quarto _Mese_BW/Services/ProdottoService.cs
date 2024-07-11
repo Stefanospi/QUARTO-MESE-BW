@@ -120,13 +120,21 @@ namespace Quarto__Mese_BW.Services
                     File.Delete(filePath);
                 }
             }
+            // Delete related ProdottiOrdine records
+            using (var cmd = GetCommand("DELETE FROM ProdottiOrdine WHERE ProductID = @id"))
+            {
+                cmd.Parameters.Add(new SqlParameter("@id", id));
+                cmd.ExecuteNonQuery();
+            }
 
-            // Elimina il prodotto dal database
+            // Now delete the Prodotti record
             using (var cmd = GetCommand("DELETE FROM Prodotti WHERE ProductID = @id"))
             {
                 cmd.Parameters.Add(new SqlParameter("@id", id));
                 cmd.ExecuteNonQuery();
             }
+
+
         }
     }
 }
