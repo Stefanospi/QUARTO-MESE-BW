@@ -1,6 +1,5 @@
 ﻿using System.Data.Common;
 using System.Data.SqlClient;
-using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
 namespace Quarto__Mese_BW.Services

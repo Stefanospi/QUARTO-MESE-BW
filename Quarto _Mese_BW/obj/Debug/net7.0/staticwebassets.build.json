@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2W5S7fQo6/5AfHUQz783D68c8odyaLIWClf+U/VnOjA=",
+  "Hash": "LJojD1kYAlyn+oRoJOxIXCsNEOmNPwCnLowYdeeeKBQ=",
   "Source": "Quarto _Mese_BW",
   "BasePath": "_content/Quarto _Mese_BW",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\4ca8613d-9810-4ae5-8aae-ade24a57e772_Schema tabelle.png",
+      "SourceId": "Quarto _Mese_BW",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\",
+      "BasePath": "_content/Quarto _Mese_BW",
+      "RelativePath": "img/4ca8613d-9810-4ae5-8aae-ade24a57e772_Schema tabelle.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\4ca8613d-9810-4ae5-8aae-ade24a57e772_Schema tabelle.png"
     },
     {
       "Identity": "C:\\Users\\cinqu\\OneDrive\\Desktop\\epicodeBack\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\libro.jpg",
