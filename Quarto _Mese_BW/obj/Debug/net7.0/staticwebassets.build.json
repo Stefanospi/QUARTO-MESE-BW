@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "D2GZ4x3wl7fqsKm9SLxLuSPygJVDZb/x7o3SNWjDWao=",
+  "Hash": "Kv9lomCV2zONHqsupq8HsZrxwJKXIGhHqTrDr0o4Rvk=",
   "Source": "Quarto _Mese_BW",
   "BasePath": "_content/Quarto _Mese_BW",
   "Mode": "Default",
@@ -55,12 +55,12 @@
       "OriginalItemSpec": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Quarto _Mese_BW.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\CarouselImg\\SfondoBW.jpg",
+      "Identity": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\CarouselImg\\dolci_SHub_1280x595_Visual.webp",
       "SourceId": "Quarto _Mese_BW",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\",
       "BasePath": "_content/Quarto _Mese_BW",
-      "RelativePath": "CarouselImg/SfondoBW.jpg",
+      "RelativePath": "CarouselImg/dolci_SHub_1280x595_Visual.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,7 +71,45 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\CarouselImg\\SfondoBW.jpg"
+      "OriginalItemSpec": "wwwroot\\CarouselImg\\dolci_SHub_1280x595_Visual.webp"
+    },
+    {
+      "Identity": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\CarouselImg\\dolci-con-pochi-ingredienti.webp",
+      "SourceId": "Quarto _Mese_BW",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\",
+      "BasePath": "_content/Quarto _Mese_BW",
+      "RelativePath": "CarouselImg/dolci-con-pochi-ingredienti.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CarouselImg\\dolci-con-pochi-ingredienti.webp"
+    },
+    {
+      "Identity": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\CarouselImg\\ricette-dolci-al-cioccolato.webp",
+      "SourceId": "Quarto _Mese_BW",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\",
+      "BasePath": "_content/Quarto _Mese_BW",
+      "RelativePath": "CarouselImg/ricette-dolci-al-cioccolato.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CarouselImg\\ricette-dolci-al-cioccolato.webp"
     },
     {
       "Identity": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\css\\site.css",
@@ -1573,6 +1611,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\Logo\\image.png",
+      "SourceId": "Quarto _Mese_BW",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\",
+      "BasePath": "_content/Quarto _Mese_BW",
+      "RelativePath": "Logo/image.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Logo\\image.png"
     }
   ]
 }

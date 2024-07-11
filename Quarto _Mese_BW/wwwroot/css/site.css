@@ -47,6 +47,12 @@ body {
     background: rgb(75, 41, 24);
 }
 
+.logo-navbar {
+    width: 4em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 .navbar a {
     color: white;
     border-bottom: 1px solid transparent;

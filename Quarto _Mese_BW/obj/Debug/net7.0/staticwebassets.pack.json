@@ -5,8 +5,20 @@
       "PackagePath": "staticwebassets\\Quarto _Mese_BW.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\CarouselImg\\SfondoBW.jpg",
-      "PackagePath": "staticwebassets\\CarouselImg\\SfondoBW.jpg"
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\CarouselImg\\dolci-con-pochi-ingredienti.webp",
+      "PackagePath": "staticwebassets\\CarouselImg\\dolci-con-pochi-ingredienti.webp"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\CarouselImg\\dolci_SHub_1280x595_Visual.webp",
+      "PackagePath": "staticwebassets\\CarouselImg\\dolci_SHub_1280x595_Visual.webp"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\CarouselImg\\ricette-dolci-al-cioccolato.webp",
+      "PackagePath": "staticwebassets\\CarouselImg\\ricette-dolci-al-cioccolato.webp"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\Logo\\image.png",
+      "PackagePath": "staticwebassets\\Logo\\image.png"
     },
     {
       "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\css\\site.css",
