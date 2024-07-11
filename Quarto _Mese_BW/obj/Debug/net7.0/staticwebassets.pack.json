@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Quarto _Mese_BW.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\CarouselImg\\SfondoBW.jpg",
+      "PackagePath": "staticwebassets\\CarouselImg\\SfondoBW.jpg"
+    },
+    {
       "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -13,8 +17,68 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\01969c9b-c8da-4d0a-b5b1-e31115808f23_pancake con nutella.jpg",
+      "PackagePath": "staticwebassets\\img\\01969c9b-c8da-4d0a-b5b1-e31115808f23_pancake con nutella.jpg"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\3514da56-5ff6-4faf-85f0-1b2b1f4e02c4_souffle due lune.jpg",
+      "PackagePath": "staticwebassets\\img\\3514da56-5ff6-4faf-85f0-1b2b1f4e02c4_souffle due lune.jpg"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\3a746160-0962-4f1a-b847-1799de65816e_Coppetta Oreo.png.jpeg",
+      "PackagePath": "staticwebassets\\img\\3a746160-0962-4f1a-b847-1799de65816e_Coppetta Oreo.png.jpeg"
+    },
+    {
       "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\4ca8613d-9810-4ae5-8aae-ade24a57e772_Schema tabelle.png",
       "PackagePath": "staticwebassets\\img\\4ca8613d-9810-4ae5-8aae-ade24a57e772_Schema tabelle.png"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\53f5c51e-ce9a-46c2-972f-7d864d881086_pancake pistacchio.jpg",
+      "PackagePath": "staticwebassets\\img\\53f5c51e-ce9a-46c2-972f-7d864d881086_pancake pistacchio.jpg"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\57f32795-f0a2-4f5d-a62d-14d631bc2a79_cheesecake frutti di bosco.jpg",
+      "PackagePath": "staticwebassets\\img\\57f32795-f0a2-4f5d-a62d-14d631bc2a79_cheesecake frutti di bosco.jpg"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\62cdaf7b-9fad-4433-bc68-7a0acd710156_coppa alaska new.png.jpeg",
+      "PackagePath": "staticwebassets\\img\\62cdaf7b-9fad-4433-bc68-7a0acd710156_coppa alaska new.png.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\7e5d3f3c-d76e-4362-b3a6-4444ce7fb8d8_cheesecake nutella.jpg",
+      "PackagePath": "staticwebassets\\img\\7e5d3f3c-d76e-4362-b3a6-4444ce7fb8d8_cheesecake nutella.jpg"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\7ffa4339-f2a1-48f8-8cca-eec222aa4d9d_Coppetta Caramello.png.jpeg",
+      "PackagePath": "staticwebassets\\img\\7ffa4339-f2a1-48f8-8cca-eec222aa4d9d_Coppetta Caramello.png.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\9231e573-7035-4937-8165-0f13e4e478c6_coppa pistacchio new.png.jpeg",
+      "PackagePath": "staticwebassets\\img\\9231e573-7035-4937-8165-0f13e4e478c6_coppa pistacchio new.png.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\cfc2cee2-c6c6-4384-b796-3f0a72b55ecc_coppaKitKat.jpg",
+      "PackagePath": "staticwebassets\\img\\cfc2cee2-c6c6-4384-b796-3f0a72b55ecc_coppaKitKat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\d29c8e08-6d03-41f4-9589-d1b66df2950d_Pancake frutti di bosco .jpg",
+      "PackagePath": "staticwebassets\\img\\d29c8e08-6d03-41f4-9589-d1b66df2950d_Pancake frutti di bosco .jpg"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\e332cd1d-a005-458b-a522-f58ae674d001_Coppetta Venchi.png.jpeg",
+      "PackagePath": "staticwebassets\\img\\e332cd1d-a005-458b-a522-f58ae674d001_Coppetta Venchi.png.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\ef776273-344a-4586-8dbe-f34f23ad6766_brownie.jpg",
+      "PackagePath": "staticwebassets\\img\\ef776273-344a-4586-8dbe-f34f23ad6766_brownie.jpg"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\efc13d13-1b81-4226-a224-90957377f2a7_cheesecake pistacchio.jpg",
+      "PackagePath": "staticwebassets\\img\\efc13d13-1b81-4226-a224-90957377f2a7_cheesecake pistacchio.jpg"
+    },
+    {
+      "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\faed8a2b-fa33-4cd0-87c1-f45cd839bdb1_Coppetta Baileys.png.jpeg",
+      "PackagePath": "staticwebassets\\img\\faed8a2b-fa33-4cd0-87c1-f45cd839bdb1_Coppetta Baileys.png.jpeg"
     },
     {
       "Id": "C:\\Users\\franc\\source\\repos\\QUARTO-MESE-BW\\Quarto _Mese_BW\\wwwroot\\img\\libro.jpg",

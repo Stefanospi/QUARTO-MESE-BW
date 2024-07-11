@@ -41,7 +41,12 @@ namespace Quarto__Mese_BW.Controllers
             };
             return View(modello);
         }
-
+        
+        public IActionResult Intro()
+        {
+            return View();
+        }
+        
         public IActionResult Index()
         {
             var prodotti = _prodottoService.GetAllProdotti();
