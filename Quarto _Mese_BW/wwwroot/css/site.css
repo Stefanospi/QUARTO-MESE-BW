@@ -53,7 +53,6 @@ body {
     border-radius: 30px;
     border: 2px solid grey;
     overflow: hidden;
-    box-shadow: 5px 5px 5px 3px #0b0b0b
 }
 
 .card-img-top{
@@ -97,6 +96,19 @@ body {
 .form-group .form-control {
     background-color: #0E1217;
     color: white;
+}
+
+.input-custom {
+    width: 3em;
+    background: transparent;
+    color: white
+}
+
+.input-cart {
+    width: 3em !important;
+    background: transparent !important;
+    color: white !important;
+    outline: none !important;
 }
 
 /*footer*/

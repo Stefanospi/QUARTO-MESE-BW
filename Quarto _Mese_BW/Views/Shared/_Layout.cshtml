@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm">
-            <a class="navbar-brand" href="@Url.Action("Index", "Home")">Quarto__Mese_BW</a>
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">ECommerce</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,6 +28,12 @@
                         {
                             <a class="nav-link" href="@Url.Action("Login", "Admin")">Area Amministrativa</a>
                         }
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Ordini", "Home")">
+                            <span class="fa fa-list"></span>
+                            Ordini
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Visualizza", "Home")">
@@ -49,35 +55,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
+                    <h5>Azienda</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">Chi siamo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">Opportunità di lavoro</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">About</a></li>
                     </ul>
                 </div>
-
                 <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
+                    <h5>Link Utili</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">Assistenza</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">Diritti del consumatore</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link link-secondary p-0 text-body-secondary">App per cellulare</a></li>
                     </ul>
                 </div>
 

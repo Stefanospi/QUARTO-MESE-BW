@@ -1,0 +1,62 @@
+﻿@model Quarto__Mese_BW.ViewModels.OrdineDettaglioViewModel
+
+@{
+    ViewData["Title"] = "Dettagli Ordine";
+}
+
+<h2>Dettagli Ordine</h2>
+
+<h3>Ordine #@Model.Ordine.OrderID</h3>
+<p>Data Ordine: @Model.Ordine.DataOrdine.ToString("g")</p>
+<p>Stato: @Model.Ordine.Stato</p>
+<p>Totale: @Model.Ordine.Totale.ToString("C")</p>
+
+<h3>Dati dell'Anagrafica</h3>
+<p>Nome: @Model.Anagrafica.Nome</p>
+<p>Cognome: @Model.Anagrafica.Cognome</p>
+<p>Email: @Model.Anagrafica.Email</p>
+<p>Indirizzo: @Model.Anagrafica.Via, @Model.Anagrafica.CAP, @Model.Anagrafica.Città, @Model.Anagrafica.Provincia</p>
+<p>Telefono: @Model.Anagrafica.Telefono</p>
+
+<h3>Prodotti Acquistati</h3>
+<table class="table text-white">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrizione</th>
+            <th>Prezzo Unitario</th>
+            <th>Quantità</th>
+            <th>Totale</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prodotto in Model.Prodotti)
+        {
+            <tr>
+                <td>@prodotto.Nome</td>
+                <td>@prodotto.Descrizione</td>
+                <td>@prodotto.PrezzoUnitario.ToString("C")</td>
+                <td>
+                    <form asp-controller="Home" asp-action="AggiornaQuantitàProdottoOrdine" method="post" class="d-inline">
+                        <input type="hidden" name="orderId" value="@Model.Ordine.OrderID" />
+                        <input type="hidden" name="productId" value="@prodotto.ProductID" />
+                        <input type="number" name="quantità" value="@prodotto.Quantità" min="1" class="form-control d-inline" style="width: 70px;" />
+                        <button type="submit" class="btn btn-secondary">Aggiorna</button>
+                    </form>
+                </td>
+                <td>@(prodotto.PrezzoUnitario * prodotto.Quantità).ToString("C")</td>
+                <td>
+                    <form asp-controller="Home" asp-action="EliminaProdottoOrdine" method="post" class="d-inline" onsubmit="return confirm('Sei sicuro di voler eliminare questo prodotto dall\'ordine?');">
+                        <input type="hidden" name="orderId" value="@Model.Ordine.OrderID" />
+                        <input type="hidden" name="productId" value="@prodotto.ProductID" />
+                        <button type="submit" class="btn btn-danger">Elimina</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Ordini", "Home")" class="btn btn-secondary">Torna agli Ordini</a>
+<a href="@Url.Action("Index", "Home")" class="btn btn-primary">Torna alla Home</a>
