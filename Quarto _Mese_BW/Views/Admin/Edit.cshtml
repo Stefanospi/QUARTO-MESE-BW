@@ -10,32 +10,32 @@
         <form asp-action="Edit" method="post" enctype="multipart/form-data">
             <div class="form-group p-3 details-description mb-4">
                 <label asp-for="Nome" class="fs-5 fw-light form-custom"></label>
-                <input asp-for="Nome" class="form-control bg-dark text-white" />
+                <input asp-for="Nome" class="form-control" />
             </div>
             <div class="form-group p-3 details-description my-4">
                 <label asp-for="Descrizione" class="fs-5 fw-light form-custom"></label>
-                <textarea asp-for="Descrizione" class="form-control bg-dark text-white"></textarea>
+                <textarea asp-for="Descrizione" class="form-control"></textarea>
             </div>
             <div class="form-group p-3 details-description my-4">
                 <label asp-for="Prezzo" class="fs-5 fw-light form-custom"></label>
-                <input asp-for="Prezzo" class="form-control bg-dark text-white" />
+                <input asp-for="Prezzo" class="form-control" />
                 <span asp-validation-for="Prezzo" class="text-danger"></span>
             </div>
             <div class="form-group p-3 details-description my-4">
                 <label asp-for="ImmagineUrl" class="fs-5 fw-light form-custom"></label>
-                <input asp-for="ImmagineUrl" class="form-control bg-dark text-white" readonly />
+                <input asp-for="ImmagineUrl" class="form-control" readonly />
             </div>
             <div class="form-group p-3 details-description my-4">
                 <label asp-for="ImmagineFile" class="fs-5 fw-light form-custom"></label>
-                <input asp-for="ImmagineFile" type="file" class="form-control-file bg-dark rounded p-2" />
+                <input asp-for="ImmagineFile" type="file" class="form-control-file rounded p-2" />
             </div>
             <div class="form-group p-3 details-description my-4">
                 <label asp-for="Stock" class="fs-5 fw-light form-custom"></label>
-                <input asp-for="Stock" class="form-control bg-dark" />
+                <input asp-for="Stock" class="form-control" />
             </div>
             <div class="form-group p-3 details-description my-4">
                 <label asp-for="CategoriaID" class="fs-5 fw-light form-custom"></label>
-                <select asp-for="CategoriaID" class="form-control bg-dark text-white">
+                <select asp-for="CategoriaID" class="form-control">
                     @foreach (var categoria in categorie)
                     {
                         <option value="@categoria.CategoriaID">@categoria.NomeCategoria</option>
