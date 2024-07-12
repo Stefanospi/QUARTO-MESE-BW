@@ -80,6 +80,7 @@ body {
 .card-title{
     font-family: "Playwrite CU", Arial, Helvetica, sans-serif !important;
     font-size:0.7em !important;
+    line-height: 19px;
 }
 
 .card-title, .details-description, .details-text, .bg-custom {

@@ -96,6 +96,54 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\01969c9b-c8da-4d0a-b5b1-e31115808f23_pancake con nutella.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\079da112-9270-4ead-b8bf-b0a48577d5ab_pancake con nutella.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/079da112-9270-4ead-b8bf-b0a48577d5ab_pancake con nutella.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\079da112-9270-4ead-b8bf-b0a48577d5ab_pancake con nutella.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\09159d04-5c44-494d-82a5-717c21a667ef_pancake pistacchio.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/09159d04-5c44-494d-82a5-717c21a667ef_pancake pistacchio.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\09159d04-5c44-494d-82a5-717c21a667ef_pancake pistacchio.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\227af216-248b-49ac-826a-fd8c1e40e222_coppa pistacchio new.png.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/227af216-248b-49ac-826a-fd8c1e40e222_coppa pistacchio new.png.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\227af216-248b-49ac-826a-fd8c1e40e222_coppa pistacchio new.png.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\3514da56-5ff6-4faf-85f0-1b2b1f4e02c4_souffle due lune.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Quarto _Mese_BW</SourceId>
@@ -128,6 +176,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\3a746160-0962-4f1a-b847-1799de65816e_Coppetta Oreo.png.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\443bf62b-23f9-42e0-80b7-32d3820f1143_Pancake frutti di bosco .jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/443bf62b-23f9-42e0-80b7-32d3820f1143_Pancake frutti di bosco .jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\443bf62b-23f9-42e0-80b7-32d3820f1143_Pancake frutti di bosco .jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\4ca8613d-9810-4ae5-8aae-ade24a57e772_Schema tabelle.png))">
       <SourceType>Package</SourceType>
       <SourceId>Quarto _Mese_BW</SourceId>
@@ -143,6 +207,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\4ca8613d-9810-4ae5-8aae-ade24a57e772_Schema tabelle.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\5249822b-6afe-42eb-84d2-6fa0c00114ff_cheesecake frutti di bosco.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/5249822b-6afe-42eb-84d2-6fa0c00114ff_cheesecake frutti di bosco.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\5249822b-6afe-42eb-84d2-6fa0c00114ff_cheesecake frutti di bosco.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\53f5c51e-ce9a-46c2-972f-7d864d881086_pancake pistacchio.jpg))">
       <SourceType>Package</SourceType>
@@ -176,6 +256,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\57f32795-f0a2-4f5d-a62d-14d631bc2a79_cheesecake frutti di bosco.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\5974d3bc-bff8-4b19-9949-d00d26e09daf_brownie.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/5974d3bc-bff8-4b19-9949-d00d26e09daf_brownie.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\5974d3bc-bff8-4b19-9949-d00d26e09daf_brownie.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\62cdaf7b-9fad-4433-bc68-7a0acd710156_coppa alaska new.png.jpeg))">
       <SourceType>Package</SourceType>
       <SourceId>Quarto _Mese_BW</SourceId>
@@ -191,6 +287,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\62cdaf7b-9fad-4433-bc68-7a0acd710156_coppa alaska new.png.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\66b42333-9458-429a-8ec8-51c6c1490181_Coppetta Caramello.png.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/66b42333-9458-429a-8ec8-51c6c1490181_Coppetta Caramello.png.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\66b42333-9458-429a-8ec8-51c6c1490181_Coppetta Caramello.png.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\7e5d3f3c-d76e-4362-b3a6-4444ce7fb8d8_cheesecake nutella.jpg))">
       <SourceType>Package</SourceType>
@@ -224,6 +336,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\7ffa4339-f2a1-48f8-8cca-eec222aa4d9d_Coppetta Caramello.png.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\84b230f5-deb5-4636-bb75-9c9a4cfaeca6_coppa alaska new.png.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/84b230f5-deb5-4636-bb75-9c9a4cfaeca6_coppa alaska new.png.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\84b230f5-deb5-4636-bb75-9c9a4cfaeca6_coppa alaska new.png.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\9231e573-7035-4937-8165-0f13e4e478c6_coppa pistacchio new.png.jpeg))">
       <SourceType>Package</SourceType>
       <SourceId>Quarto _Mese_BW</SourceId>
@@ -239,6 +367,54 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\9231e573-7035-4937-8165-0f13e4e478c6_coppa pistacchio new.png.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\9def435e-e35f-47b6-b5d7-b19a789d9bd6_coppaKitKat.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/9def435e-e35f-47b6-b5d7-b19a789d9bd6_coppaKitKat.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\9def435e-e35f-47b6-b5d7-b19a789d9bd6_coppaKitKat.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\a13078bf-3459-4381-8600-beca2d371f9e_cheesecake nutella.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/a13078bf-3459-4381-8600-beca2d371f9e_cheesecake nutella.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\a13078bf-3459-4381-8600-beca2d371f9e_cheesecake nutella.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\cdfb67f3-b1ea-4418-81ad-d02d66f2a166_Coppetta Oreo.png.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/cdfb67f3-b1ea-4418-81ad-d02d66f2a166_Coppetta Oreo.png.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\cdfb67f3-b1ea-4418-81ad-d02d66f2a166_Coppetta Oreo.png.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\cfc2cee2-c6c6-4384-b796-3f0a72b55ecc_coppaKitKat.jpg))">
       <SourceType>Package</SourceType>
@@ -272,6 +448,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\d29c8e08-6d03-41f4-9589-d1b66df2950d_Pancake frutti di bosco .jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\e1234aa6-8fca-48bd-8777-12b61ef2519c_Coppetta Venchi.png.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/e1234aa6-8fca-48bd-8777-12b61ef2519c_Coppetta Venchi.png.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\e1234aa6-8fca-48bd-8777-12b61ef2519c_Coppetta Venchi.png.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\e332cd1d-a005-458b-a522-f58ae674d001_Coppetta Venchi.png.jpeg))">
       <SourceType>Package</SourceType>
       <SourceId>Quarto _Mese_BW</SourceId>
@@ -287,6 +479,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\e332cd1d-a005-458b-a522-f58ae674d001_Coppetta Venchi.png.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\e9b509eb-1780-447a-84dc-9b639985c88a_Coppetta Baileys.png.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/e9b509eb-1780-447a-84dc-9b639985c88a_Coppetta Baileys.png.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\e9b509eb-1780-447a-84dc-9b639985c88a_Coppetta Baileys.png.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\edf32d3a-aa52-44c3-90c8-3f3d6b8ef67c_cheesecake pistacchio.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/edf32d3a-aa52-44c3-90c8-3f3d6b8ef67c_cheesecake pistacchio.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\edf32d3a-aa52-44c3-90c8-3f3d6b8ef67c_cheesecake pistacchio.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ef776273-344a-4586-8dbe-f34f23ad6766_brownie.jpg))">
       <SourceType>Package</SourceType>
@@ -319,6 +543,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\efc13d13-1b81-4226-a224-90957377f2a7_cheesecake pistacchio.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\f4bcbd64-8066-4acb-a14d-ae5b6c608f5e_souffle due lune.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Quarto _Mese_BW</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Quarto _Mese_BW</BasePath>
+      <RelativePath>img/f4bcbd64-8066-4acb-a14d-ae5b6c608f5e_souffle due lune.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\f4bcbd64-8066-4acb-a14d-ae5b6c608f5e_souffle due lune.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\faed8a2b-fa33-4cd0-87c1-f45cd839bdb1_Coppetta Baileys.png.jpeg))">
       <SourceType>Package</SourceType>

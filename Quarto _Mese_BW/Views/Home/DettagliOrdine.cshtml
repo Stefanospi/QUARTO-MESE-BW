@@ -61,7 +61,7 @@
                                 <button type="submit" class="btn btn-secondary">Aggiorna</button>
                             </form>
                         </td>
-                        <td>@(prodotto.PrezzoUnitario * prodotto.Quantità).ToString("C")</td>
+                        <td>@((prodotto.PrezzoUnitario * prodotto.Quantità).ToString("C"))</td>
                         <td>
                             <form asp-controller="Home" asp-action="EliminaProdottoOrdine" method="post" class="d-inline" onsubmit="return confirm('Sei sicuro di voler eliminare questo prodotto dall\'ordine?');">
                                 <input type="hidden" name="orderId" value="@Model.Ordine.OrderID" />
